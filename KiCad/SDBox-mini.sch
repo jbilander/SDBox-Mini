@@ -329,10 +329,10 @@ NoConn ~ 4550 1600
 NoConn ~ 4550 1700
 NoConn ~ 4550 1800
 $Comp
-L Connector:Micro_SD_Card J2
+L Connector:Micro_SD_Card J3
 U 1 1 60FD5546
 P 7000 2050
-F 0 "J2" H 6950 1233 50  0000 C CNN
+F 0 "J3" H 6950 1233 50  0000 C CNN
 F 1 "Micro_SD_Card" H 6950 1324 50  0000 C CNN
 F 2 "SDBox-mini:GCT-MEM2055-00-190-01-A" H 8150 2350 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7000 2050 50  0001 C CNN
@@ -393,7 +393,7 @@ $EndComp
 Text GLabel 7450 5250 3    50   Input ~ 0
 GND
 Text GLabel 7450 5050 2    50   Input ~ 0
-VCC
+3V3
 $Comp
 L Device:R_Small R2
 U 1 1 6101E2BD
@@ -488,4 +488,27 @@ Text GLabel 10350 1750 2    50   Output ~ 0
 Wire Wire Line
 	10200 1750 10350 1750
 Connection ~ 10200 1750
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 6104A5C2
+P 2200 5000
+F 0 "J2" H 2118 4475 50  0000 C CNN
+F 1 "Conn_01x06" H 2118 4566 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2200 5000 50  0001 C CNN
+F 3 "~" H 2200 5000 50  0001 C CNN
+	1    2200 5000
+	-1   0    0    1   
+$EndComp
+Text GLabel 2400 5200 2    50   Input ~ 0
+DTR
+Text GLabel 2400 5100 2    50   Input ~ 0
+TXO
+Text GLabel 2400 5000 2    50   Output ~ 0
+RXI
+Text GLabel 2400 4900 2    50   Input ~ 0
+VCC
+Text GLabel 2400 4800 2    50   Input ~ 0
+GND
+Text GLabel 2400 4700 2    50   Input ~ 0
+GND
 $EndSCHEMATC
