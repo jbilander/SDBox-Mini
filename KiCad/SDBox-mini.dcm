@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LVC125A
+D Quad buffer 3-State outputs
+K TTL buffer 3State
+F https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf
+$ENDCMP
+#
+$CMP LM1117-3.3
+D 800mA Low-Dropout Linear Regulator, 1.8V fixed output, TO-220/TO-252/TO-263/SOT-223
+K linear regulator ldo fixed positive
+F http://www.ti.com/lit/ds/symlink/lm1117.pdf
+$ENDCMP
+#
+#End Doc Library
