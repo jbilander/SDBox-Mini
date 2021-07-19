@@ -340,87 +340,55 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7000 2050 50  
 	-1   0    0    1   
 $EndComp
 NoConn ~ 7900 2350
-Text GLabel 7450 4800 2    50   Output ~ 0
+Text GLabel 6100 4250 2    50   Output ~ 0
 MISO
 Text GLabel 7900 1850 2    50   Input ~ 0
 GND
-Text GLabel 6550 3800 0    50   Input ~ 0
+Text GLabel 7650 4150 2    50   Input ~ 0
 SCK
 Text GLabel 7900 2050 2    50   Input ~ 0
 3V3
-Text GLabel 6550 3300 0    50   Input ~ 0
+Text GLabel 6850 3450 0    50   Input ~ 0
 MOSI
 NoConn ~ 7900 1650
 NoConn ~ 6200 1450
 Text GLabel 7900 2250 2    50   Input ~ 0
 SELECT_3V3
-$Comp
-L SDBox-mini:74LVC125A U3
-U 1 1 60FFE391
-P 7000 4150
-F 0 "U3" H 7000 5565 50  0000 C CNN
-F 1 "74LVC125A" H 7000 5474 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8200 5200 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf" H 8200 5200 50  0001 C CNN
-	1    7000 4150
-	1    0    0    -1  
-$EndComp
-Text GLabel 6550 3550 0    50   Input ~ 0
+Text GLabel 6800 4500 0    50   Input ~ 0
 GND
-Text GLabel 6550 4050 0    50   Input ~ 0
-GND
-Text GLabel 6550 4550 0    50   Input ~ 0
-GND
-Text GLabel 6550 5050 0    50   Input ~ 0
-GND
-Text GLabel 6550 4300 0    50   Input ~ 0
+Text GLabel 6850 4150 0    50   Input ~ 0
 SELECT
-Text GLabel 7450 4300 2    50   Output ~ 0
+Text GLabel 7650 4500 2    50   Output ~ 0
 SELECT_3V3
-Text GLabel 7450 4050 2    50   Input ~ 0
+Text GLabel 7850 3250 1    50   Input ~ 0
 GND
-$Comp
-L Device:C_Small C9
-U 1 1 61017825
-P 7450 5150
-F 0 "C9" H 7350 5150 50  0000 R CNN
-F 1 "0.1uF" H 7200 5250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7450 5150 50  0001 C CNN
-F 3 "~" H 7450 5150 50  0001 C CNN
-	1    7450 5150
-	-1   0    0    1   
-$EndComp
-Text GLabel 7450 5250 3    50   Input ~ 0
-GND
-Text GLabel 7450 5050 2    50   Input ~ 0
-3V3
 $Comp
 L Device:R_Small R2
 U 1 1 6101E2BD
-P 6000 4700
-F 0 "R2" H 5941 4654 50  0000 R CNN
-F 1 "10k" H 5941 4745 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6000 4700 50  0001 C CNN
-F 3 "~" H 6000 4700 50  0001 C CNN
-	1    6000 4700
+P 5550 4500
+F 0 "R2" H 5491 4454 50  0000 R CNN
+F 1 "10k" H 5491 4545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 4500 50  0001 C CNN
+F 3 "~" H 5550 4500 50  0001 C CNN
+	1    5550 4500
 	-1   0    0    1   
 $EndComp
-Text GLabel 6000 4600 1    50   Input ~ 0
+Text GLabel 5550 4400 1    50   Input ~ 0
 3V3
 Text GLabel 7900 2150 2    50   Input ~ 0
 MOSI_3V3
-Text GLabel 7450 3300 2    50   Output ~ 0
+Text GLabel 7650 3800 2    50   Output ~ 0
 MOSI_3V3
 Text GLabel 7900 1750 2    50   Output ~ 0
 MISO_3V3
-Text GLabel 5700 4800 0    50   Input ~ 0
+Text GLabel 5250 4600 0    50   Input ~ 0
 MISO_3V3
 Wire Wire Line
-	5700 4800 6000 4800
-Connection ~ 6000 4800
+	5250 4600 5550 4600
+Connection ~ 5550 4600
 Wire Wire Line
-	6000 4800 6550 4800
-Text GLabel 7450 3800 2    50   Output ~ 0
+	5550 4600 6100 4600
+Text GLabel 6850 3800 0    50   Output ~ 0
 SCK_3V3
 Text GLabel 7900 1950 2    50   Input ~ 0
 SCK_3V3
@@ -511,4 +479,33 @@ Text GLabel 2400 4800 2    50   Input ~ 0
 GND
 Text GLabel 2400 4700 2    50   Input ~ 0
 GND
+$Comp
+L Device:C_Small C9
+U 1 1 61017825
+P 7850 3350
+F 0 "C9" H 7700 3250 50  0000 R CNN
+F 1 "0.1uF" H 7500 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 3350 50  0001 C CNN
+F 3 "~" H 7850 3350 50  0001 C CNN
+	1    7850 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L SDBox-mini:74LVC3G17 U3
+U 1 1 610573DA
+P 7250 4000
+F 0 "U3" H 7250 4915 50  0000 C CNN
+F 1 "74LVC3G17" H 7250 4824 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 8100 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8100 4400 50  0001 C CNN
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 3450 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	8100 3450 7850 3450
+Connection ~ 7850 3450
+Wire Wire Line
+	7850 3450 7700 3450
 $EndSCHEMATC
