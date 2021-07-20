@@ -172,7 +172,7 @@ NoConn ~ 3350 1800
 NoConn ~ 3350 1900
 Text GLabel 3950 4300 3    50   Input ~ 0
 GND
-Text GLabel 3950 1100 1    50   Input ~ 0
+Text GLabel 3950 1150 1    50   Input ~ 0
 VCC
 Wire Wire Line
 	3950 1300 4050 1300
@@ -243,23 +243,18 @@ Connection ~ 5650 2250
 $Comp
 L Device:C_Small C6
 U 1 1 60FA7C64
-P 3700 1250
-F 0 "C6" V 3800 1400 50  0000 R CNN
-F 1 "0.1uF" V 3800 1050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 1250 50  0001 C CNN
-F 3 "~" H 3700 1250 50  0001 C CNN
-	1    3700 1250
+P 3700 1300
+F 0 "C6" V 3800 1450 50  0000 R CNN
+F 1 "0.1uF" V 3800 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 1300 50  0001 C CNN
+F 3 "~" H 3700 1300 50  0001 C CNN
+	1    3700 1300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3950 1100 3950 1250
 Connection ~ 3950 1300
 Wire Wire Line
-	3800 1250 3950 1250
-Connection ~ 3950 1250
-Wire Wire Line
-	3950 1250 3950 1300
-Text GLabel 3600 1250 0    50   Input ~ 0
+	3800 1300 3950 1300
+Text GLabel 3600 1300 0    50   Input ~ 0
 GND
 Text Label 4900 2100 0    50   ~ 0
 XTAL1
@@ -285,13 +280,10 @@ Text GLabel 4550 3800 2    50   BiDi ~ 0
 POUT
 Text GLabel 4550 3700 2    50   BiDi ~ 0
 BUSY
-NoConn ~ 4550 3500
-NoConn ~ 4550 3600
 Text GLabel 4550 3300 2    50   Input ~ 0
 RXI
 Text GLabel 4550 3400 2    50   Output ~ 0
 TXO
-NoConn ~ 2000 2150
 NoConn ~ 2000 3950
 Text GLabel 4550 2000 2    50   Input ~ 0
 MISO
@@ -328,67 +320,52 @@ Connection ~ 4950 3100
 NoConn ~ 4550 1600
 NoConn ~ 4550 1700
 NoConn ~ 4550 1800
-$Comp
-L Connector:Micro_SD_Card J3
-U 1 1 60FD5546
-P 7000 2050
-F 0 "J3" H 6950 1233 50  0000 C CNN
-F 1 "Micro_SD_Card" H 6950 1324 50  0000 C CNN
-F 2 "SDBox-mini:GCT-MEM2055-00-190-01-A" H 8150 2350 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7000 2050 50  0001 C CNN
-	1    7000 2050
-	-1   0    0    1   
-$EndComp
 NoConn ~ 7900 2350
-Text GLabel 6100 4250 2    50   Output ~ 0
+Text GLabel 10200 3400 2    50   Output ~ 0
 MISO
 Text GLabel 7900 1850 2    50   Input ~ 0
 GND
-Text GLabel 7650 4150 2    50   Input ~ 0
+Text GLabel 7350 4150 2    50   Input ~ 0
 SCK
 Text GLabel 7900 2050 2    50   Input ~ 0
 3V3
-Text GLabel 6850 3450 0    50   Input ~ 0
+Text GLabel 6550 3450 0    50   Input ~ 0
 MOSI
 NoConn ~ 7900 1650
-NoConn ~ 6200 1450
 Text GLabel 7900 2250 2    50   Input ~ 0
-SELECT_3V3
-Text GLabel 6800 4500 0    50   Input ~ 0
+CS
+Text GLabel 6500 4500 0    50   Input ~ 0
 GND
-Text GLabel 6850 4150 0    50   Input ~ 0
+Text GLabel 6550 4150 0    50   Input ~ 0
 SELECT
-Text GLabel 7650 4500 2    50   Output ~ 0
-SELECT_3V3
-Text GLabel 7850 3250 1    50   Input ~ 0
+Text GLabel 7350 4500 2    50   Output ~ 0
+CS
+Text GLabel 7550 3250 1    50   Input ~ 0
 GND
 $Comp
 L Device:R_Small R2
 U 1 1 6101E2BD
-P 5550 4500
-F 0 "R2" H 5491 4454 50  0000 R CNN
-F 1 "10k" H 5491 4545 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 4500 50  0001 C CNN
-F 3 "~" H 5550 4500 50  0001 C CNN
-	1    5550 4500
+P 9050 3300
+F 0 "R2" H 8991 3254 50  0000 R CNN
+F 1 "10k" H 8991 3345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9050 3300 50  0001 C CNN
+F 3 "~" H 9050 3300 50  0001 C CNN
+	1    9050 3300
 	-1   0    0    1   
 $EndComp
-Text GLabel 5550 4400 1    50   Input ~ 0
+Text GLabel 9050 3200 1    50   Input ~ 0
 3V3
 Text GLabel 7900 2150 2    50   Input ~ 0
 MOSI_3V3
-Text GLabel 7650 3800 2    50   Output ~ 0
+Text GLabel 7350 3800 2    50   Output ~ 0
 MOSI_3V3
 Text GLabel 7900 1750 2    50   Output ~ 0
 MISO_3V3
-Text GLabel 5250 4600 0    50   Input ~ 0
+Text GLabel 8950 3400 0    50   Input ~ 0
 MISO_3V3
 Wire Wire Line
-	5250 4600 5550 4600
-Connection ~ 5550 4600
-Wire Wire Line
-	5550 4600 6100 4600
-Text GLabel 6850 3800 0    50   Output ~ 0
+	8950 3400 9050 3400
+Text GLabel 6550 3800 0    50   Output ~ 0
 SCK_3V3
 Text GLabel 7900 1950 2    50   Input ~ 0
 SCK_3V3
@@ -403,59 +380,50 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 9550 1750 50  0001 C CNN
 	1    9550 1750
 	1    0    0    -1  
 $EndComp
-Text GLabel 9250 1750 0    50   Input ~ 0
+Text GLabel 9000 1750 0    50   Input ~ 0
 VCC
 $Comp
 L Device:C_Small C1
 U 1 1 610421CE
-P 9250 1650
-F 0 "C1" H 9450 1650 50  0000 R CNN
-F 1 "10uF" H 9300 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9250 1650 50  0001 C CNN
-F 3 "~" H 9250 1650 50  0001 C CNN
-	1    9250 1650
-	-1   0    0    1   
+P 9250 1850
+F 0 "C1" H 9150 1850 50  0000 R CNN
+F 1 "10uF" H 9000 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9250 1850 50  0001 C CNN
+F 3 "~" H 9250 1850 50  0001 C CNN
+	1    9250 1850
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 610444D0
-P 9850 1650
-F 0 "C2" H 9750 1650 50  0000 R CNN
-F 1 "10uF" H 9600 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9850 1650 50  0001 C CNN
-F 3 "~" H 9850 1650 50  0001 C CNN
-	1    9850 1650
-	-1   0    0    1   
+P 9950 1850
+F 0 "C2" H 10150 1850 50  0000 R CNN
+F 1 "10uF" H 10000 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9950 1850 50  0001 C CNN
+F 3 "~" H 9950 1850 50  0001 C CNN
+	1    9950 1850
+	1    0    0    -1  
 $EndComp
-Text GLabel 9250 1550 1    50   Input ~ 0
-GND
-Text GLabel 9850 1550 1    50   Input ~ 0
-GND
 $Comp
 L Device:C_Small C3
 U 1 1 6104580B
-P 10200 1650
-F 0 "C3" H 10100 1650 50  0000 R CNN
-F 1 "0.1uF" H 9950 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10200 1650 50  0001 C CNN
-F 3 "~" H 10200 1650 50  0001 C CNN
-	1    10200 1650
+P 10300 1850
+F 0 "C3" H 10200 1850 50  0000 R CNN
+F 1 "0.1uF" H 10050 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10300 1850 50  0001 C CNN
+F 3 "~" H 10300 1850 50  0001 C CNN
+	1    10300 1850
 	-1   0    0    1   
 $EndComp
-Text GLabel 10200 1550 1    50   Input ~ 0
-GND
 Wire Wire Line
-	9850 1750 10200 1750
+	9850 1750 9950 1750
 Connection ~ 9850 1750
 Wire Wire Line
 	9850 1850 9850 1750
 Text GLabel 9550 2050 3    50   Input ~ 0
 GND
-Text GLabel 10350 1750 2    50   Output ~ 0
+Text GLabel 10500 1750 2    50   Output ~ 0
 3V3
-Wire Wire Line
-	10200 1750 10350 1750
-Connection ~ 10200 1750
 $Comp
 L Connector_Generic:Conn_01x06 J2
 U 1 1 6104A5C2
@@ -482,30 +450,181 @@ GND
 $Comp
 L Device:C_Small C9
 U 1 1 61017825
-P 7850 3350
-F 0 "C9" H 7700 3250 50  0000 R CNN
-F 1 "0.1uF" H 7500 3350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 3350 50  0001 C CNN
-F 3 "~" H 7850 3350 50  0001 C CNN
-	1    7850 3350
+P 7550 3350
+F 0 "C9" H 7400 3250 50  0000 R CNN
+F 1 "0.1uF" H 7200 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7550 3350 50  0001 C CNN
+F 3 "~" H 7550 3350 50  0001 C CNN
+	1    7550 3350
 	-1   0    0    1   
 $EndComp
 $Comp
 L SDBox-mini:74LVC3G17 U3
 U 1 1 610573DA
-P 7250 4000
-F 0 "U3" H 7250 4915 50  0000 C CNN
-F 1 "74LVC3G17" H 7250 4824 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 8100 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 8100 4400 50  0001 C CNN
-	1    7250 4000
+P 6950 4000
+F 0 "U3" H 6950 4915 50  0000 C CNN
+F 1 "74LVC3G17" H 6950 4824 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 7800 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7800 4400 50  0001 C CNN
+	1    6950 4000
 	1    0    0    -1  
 $EndComp
-Text GLabel 8100 3450 2    50   Input ~ 0
+Text GLabel 7800 3450 2    50   Input ~ 0
 3V3
 Wire Wire Line
-	8100 3450 7850 3450
-Connection ~ 7850 3450
+	7800 3450 7550 3450
+Connection ~ 7550 3450
 Wire Wire Line
-	7850 3450 7700 3450
+	7550 3450 7400 3450
+$Comp
+L SDBox-mini:74HCT2G17 U4
+U 1 1 6107F418
+P 9750 3600
+F 0 "U4" H 9750 4115 50  0000 C CNN
+F 1 "74HCT2G17" H 9750 4024 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 10250 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G17.pdf" H 10250 4550 50  0001 C CNN
+	1    9750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 61087309
+P 10700 3500
+F 0 "C10" H 10550 3400 50  0000 R CNN
+F 1 "0.1uF" H 10350 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10700 3500 50  0001 C CNN
+F 3 "~" H 10700 3500 50  0001 C CNN
+	1    10700 3500
+	-1   0    0    1   
+$EndComp
+Text GLabel 10700 3400 1    50   Input ~ 0
+GND
+Wire Wire Line
+	10700 3600 10200 3600
+Text GLabel 10700 3600 3    50   Input ~ 0
+VCC
+Wire Wire Line
+	9050 3400 9300 3400
+Connection ~ 9050 3400
+Text GLabel 9200 3600 0    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R4
+U 1 1 61098AA5
+P 8050 1350
+F 0 "R4" H 7991 1304 50  0000 R CNN
+F 1 "10k" H 7991 1395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 1350 50  0001 C CNN
+F 3 "~" H 8050 1350 50  0001 C CNN
+	1    8050 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 1950 9250 2050
+Wire Wire Line
+	9250 2050 9550 2050
+Wire Wire Line
+	9000 1750 9250 1750
+Connection ~ 9250 1750
+Wire Wire Line
+	9950 2050 9950 1950
+Connection ~ 9550 2050
+Wire Wire Line
+	9950 1750 10300 1750
+Connection ~ 9950 1750
+Wire Wire Line
+	10300 2050 10300 1950
+Connection ~ 9950 2050
+Connection ~ 10300 1750
+Wire Wire Line
+	9950 2050 10300 2050
+Wire Wire Line
+	10300 1750 10500 1750
+Wire Wire Line
+	9550 2050 9950 2050
+$Comp
+L SDBox-mini:Micro_SD_Card J3
+U 1 1 610B5617
+P 7000 2050
+F 0 "J3" H 6950 1233 50  0000 C CNN
+F 1 "Micro_SD_Card" H 6950 1324 50  0000 C CNN
+F 2 "SDBox-mini:GCT-MEM2055-00-190-01-A" H 8150 2350 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7000 2050 50  0001 C CNN
+	1    7000 2050
+	-1   0    0    1   
+$EndComp
+Text GLabel 6200 1450 0    50   Input ~ 0
+GND
+Text GLabel 8250 1450 2    50   BiDi ~ 0
+CARD_DETECT
+Text GLabel 8050 1250 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	7900 1450 8050 1450
+Connection ~ 8050 1450
+Wire Wire Line
+	8050 1450 8250 1450
+$Comp
+L Device:R_Small R3
+U 1 1 610BDC67
+P 8950 3800
+F 0 "R3" V 9050 3850 50  0000 R CNN
+F 1 "10k" V 8850 3850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 3800 50  0001 C CNN
+F 3 "~" H 8950 3800 50  0001 C CNN
+	1    8950 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 610C0199
+P 9300 3700
+F 0 "C11" H 9500 3700 50  0000 R CNN
+F 1 "0.1uF" H 9200 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9300 3700 50  0001 C CNN
+F 3 "~" H 9300 3700 50  0001 C CNN
+	1    9300 3700
+	-1   0    0    1   
+$EndComp
+Text GLabel 8750 3800 0    50   BiDi ~ 0
+CARD_DETECT
+Wire Wire Line
+	8750 3800 8850 3800
+Connection ~ 9300 3800
+Connection ~ 9300 3600
+Wire Wire Line
+	9200 3600 9300 3600
+Wire Wire Line
+	9050 3800 9300 3800
+Text GLabel 10200 3800 2    50   Output ~ 0
+CD
+Text GLabel 4550 3500 2    50   Input ~ 0
+CD
+Text GLabel 4550 3600 2    50   Output ~ 0
+ACK
+Text GLabel 2000 2150 0    50   Input ~ 0
+ACK
+Wire Wire Line
+	3950 1150 3950 1300
+$Comp
+L Connector:USB_B_Micro J4
+U 1 1 610EC3C8
+P 5100 4600
+F 0 "J4" H 5157 5067 50  0000 C CNN
+F 1 "USB_B_Micro" H 5157 4976 50  0000 C CNN
+F 2 "SDBox-mini:USB_Micro-B_Unknown_5s_SMT" H 5250 4550 50  0001 C CNN
+F 3 "~" H 5250 4550 50  0001 C CNN
+	1    5100 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 4600
+NoConn ~ 5400 4700
+NoConn ~ 5400 4800
+Text GLabel 5400 4400 2    50   Input ~ 0
+VCC
+Text GLabel 5100 5000 3    50   Input ~ 0
+GND
+Wire Wire Line
+	5000 5000 5100 5000
 $EndSCHEMATC

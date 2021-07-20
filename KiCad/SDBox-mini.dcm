@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74HCT2G17
+D Dual non-inverting Schmitt trigger
+K Dual non-inverting Schmitt trigger
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G17.pdf
+$ENDCMP
+#
 $CMP 74LVC125A
 D Quad buffer 3-State outputs
 K TTL buffer 3State
@@ -16,6 +22,12 @@ $CMP LM1117-3.3
 D 800mA Low-Dropout Linear Regulator, 1.8V fixed output, TO-220/TO-252/TO-263/SOT-223
 K linear regulator ldo fixed positive
 F http://www.ti.com/lit/ds/symlink/lm1117.pdf
+$ENDCMP
+#
+$CMP Micro_SD_Card
+D Micro SD Card Socket
+K connector SD microsd
+F http://katalog.we-online.de/em/datasheet/693072010801.pdf
 $ENDCMP
 #
 #End Doc Library
