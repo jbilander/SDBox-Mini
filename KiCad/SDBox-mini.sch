@@ -276,9 +276,9 @@ Wire Wire Line
 	5650 2100 5650 2250
 Wire Wire Line
 	5650 2250 5650 2400
-Text GLabel 4550 3800 2    50   BiDi ~ 0
-POUT
 Text GLabel 4550 3700 2    50   BiDi ~ 0
+POUT
+Text GLabel 4550 1600 2    50   BiDi ~ 0
 BUSY
 Text GLabel 4550 3300 2    50   Input ~ 0
 RXI
@@ -317,9 +317,7 @@ RESET
 Wire Wire Line
 	4950 3100 5250 3100
 Connection ~ 4950 3100
-NoConn ~ 4550 1600
-NoConn ~ 4550 1700
-NoConn ~ 4550 1800
+NoConn ~ 4550 3800
 NoConn ~ 7900 2350
 Text GLabel 10200 3400 2    50   Output ~ 0
 MISO
@@ -336,7 +334,7 @@ Text GLabel 7900 2250 2    50   Input ~ 0
 CS
 Text GLabel 6500 4500 0    50   Input ~ 0
 GND
-Text GLabel 6550 4150 0    50   Input ~ 0
+Text GLabel 4550 3500 2    50   Input ~ 0
 SELECT
 Text GLabel 7350 4500 2    50   Output ~ 0
 CS
@@ -557,7 +555,7 @@ $EndComp
 Text GLabel 6200 1450 0    50   Input ~ 0
 GND
 Text GLabel 8250 1450 2    50   BiDi ~ 0
-CARD_DETECT
+CD
 Text GLabel 8050 1250 1    50   Input ~ 0
 VCC
 Wire Wire Line
@@ -588,7 +586,7 @@ F 3 "~" H 9300 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 8750 3800 0    50   BiDi ~ 0
-CARD_DETECT
+CD
 Wire Wire Line
 	8750 3800 8850 3800
 Connection ~ 9300 3800
@@ -598,10 +596,10 @@ Wire Wire Line
 Wire Wire Line
 	9050 3800 9300 3800
 Text GLabel 10200 3800 2    50   Output ~ 0
-CD
-Text GLabel 4550 3500 2    50   Input ~ 0
-CD
-Text GLabel 4550 3600 2    50   Output ~ 0
+CP
+Text GLabel 4550 3600 2    50   Input ~ 0
+CP
+Text GLabel 4550 1700 2    50   Output ~ 0
 ACK
 Text GLabel 2000 2150 0    50   Input ~ 0
 ACK
@@ -627,4 +625,8 @@ Text GLabel 5100 5000 3    50   Input ~ 0
 GND
 Wire Wire Line
 	5000 5000 5100 5000
+Text GLabel 4550 1800 2    50   Output ~ 0
+SS
+Text GLabel 6550 4150 0    50   Input ~ 0
+SS
 $EndSCHEMATC
