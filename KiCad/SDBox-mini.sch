@@ -334,7 +334,7 @@ Text GLabel 7900 2250 2    50   Input ~ 0
 CS
 Text GLabel 6500 4500 0    50   Input ~ 0
 GND
-Text GLabel 4550 3500 2    50   Input ~ 0
+Text GLabel 4550 3500 2    50   BiDi ~ 0
 SELECT
 Text GLabel 7350 4500 2    50   Output ~ 0
 CS
@@ -629,4 +629,30 @@ Text GLabel 4550 1800 2    50   Output ~ 0
 SS
 Text GLabel 6550 4150 0    50   Input ~ 0
 SS
+$Comp
+L Device:LED D2
+U 1 1 60F879D9
+P 8500 5000
+F 0 "D2" V 8539 4883 50  0000 R CNN
+F 1 "LED" V 8448 4883 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8500 5000 50  0001 C CNN
+F 3 "~" H 8500 5000 50  0001 C CNN
+	1    8500 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 60F8AA52
+P 8500 4750
+F 0 "R5" H 8441 4704 50  0000 R CNN
+F 1 "150" H 8441 4795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 4750 50  0001 C CNN
+F 3 "~" H 8500 4750 50  0001 C CNN
+	1    8500 4750
+	-1   0    0    1   
+$EndComp
+Text GLabel 8500 4650 1    50   Input ~ 0
+VCC
+Text GLabel 8500 5150 3    50   Input ~ 0
+GND
 $EndSCHEMATC
