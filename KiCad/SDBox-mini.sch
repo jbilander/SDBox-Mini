@@ -505,17 +505,17 @@ VCC
 Wire Wire Line
 	9050 3400 9300 3400
 Connection ~ 9050 3400
-Text GLabel 9200 3600 0    50   Input ~ 0
+Text GLabel 9050 3600 0    50   Input ~ 0
 GND
 $Comp
 L Device:R_Small R4
 U 1 1 61098AA5
-P 8050 1350
-F 0 "R4" H 7991 1304 50  0000 R CNN
-F 1 "10k" H 7991 1395 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 1350 50  0001 C CNN
-F 3 "~" H 8050 1350 50  0001 C CNN
-	1    8050 1350
+P 8350 3700
+F 0 "R4" H 8291 3654 50  0000 R CNN
+F 1 "10k" H 8291 3745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8350 3700 50  0001 C CNN
+F 3 "~" H 8350 3700 50  0001 C CNN
+	1    8350 3700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -554,47 +554,36 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7000 2050 50  
 $EndComp
 Text GLabel 6200 1450 0    50   Input ~ 0
 GND
-Text GLabel 8250 1450 2    50   BiDi ~ 0
+Text GLabel 7900 1450 2    50   Output ~ 0
 CD
-Text GLabel 8050 1250 1    50   Input ~ 0
+Text GLabel 8350 3600 1    50   Input ~ 0
 VCC
-Wire Wire Line
-	7900 1450 8050 1450
-Connection ~ 8050 1450
-Wire Wire Line
-	8050 1450 8250 1450
 $Comp
 L Device:R_Small R3
 U 1 1 610BDC67
-P 8950 3800
-F 0 "R3" V 9050 3850 50  0000 R CNN
-F 1 "10k" V 8850 3850 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 3800 50  0001 C CNN
-F 3 "~" H 8950 3800 50  0001 C CNN
-	1    8950 3800
+P 8800 3800
+F 0 "R3" V 8900 3850 50  0000 R CNN
+F 1 "10k" V 8700 3850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8800 3800 50  0001 C CNN
+F 3 "~" H 8800 3800 50  0001 C CNN
+	1    8800 3800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C11
 U 1 1 610C0199
-P 9300 3700
-F 0 "C11" H 9500 3700 50  0000 R CNN
-F 1 "0.1uF" H 9200 3900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9300 3700 50  0001 C CNN
-F 3 "~" H 9300 3700 50  0001 C CNN
-	1    9300 3700
+P 9200 3700
+F 0 "C11" H 9400 3700 50  0000 R CNN
+F 1 "0.1uF" H 9100 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9200 3700 50  0001 C CNN
+F 3 "~" H 9200 3700 50  0001 C CNN
+	1    9200 3700
 	-1   0    0    1   
 $EndComp
-Text GLabel 8750 3800 0    50   BiDi ~ 0
+Text GLabel 8200 3800 0    50   Input ~ 0
 CD
 Wire Wire Line
-	8750 3800 8850 3800
-Connection ~ 9300 3800
-Connection ~ 9300 3600
-Wire Wire Line
 	9200 3600 9300 3600
-Wire Wire Line
-	9050 3800 9300 3800
 Text GLabel 10200 3800 2    50   Output ~ 0
 CP
 Text GLabel 4550 3600 2    50   Input ~ 0
@@ -605,26 +594,6 @@ Text GLabel 2000 2150 0    50   Input ~ 0
 ACK
 Wire Wire Line
 	3950 1150 3950 1300
-$Comp
-L Connector:USB_B_Micro J4
-U 1 1 610EC3C8
-P 5100 4600
-F 0 "J4" H 5157 5067 50  0000 C CNN
-F 1 "USB_B_Micro" H 5157 4976 50  0000 C CNN
-F 2 "SDBox-mini:USB_Micro-B_Unknown_5s_SMT" H 5250 4550 50  0001 C CNN
-F 3 "~" H 5250 4550 50  0001 C CNN
-	1    5100 4600
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5400 4600
-NoConn ~ 5400 4700
-NoConn ~ 5400 4800
-Text GLabel 5400 4400 2    50   Input ~ 0
-VCC
-Text GLabel 5100 5000 3    50   Input ~ 0
-GND
-Wire Wire Line
-	5000 5000 5100 5000
 Text GLabel 4550 1800 2    50   Output ~ 0
 SS
 Text GLabel 6550 4150 0    50   Input ~ 0
@@ -632,27 +601,160 @@ SS
 $Comp
 L Device:LED D2
 U 1 1 60F879D9
-P 8500 5000
-F 0 "D2" V 8539 4883 50  0000 R CNN
-F 1 "LED" V 8448 4883 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8500 5000 50  0001 C CNN
-F 3 "~" H 8500 5000 50  0001 C CNN
-	1    8500 5000
+P 9950 5400
+F 0 "D2" V 9989 5283 50  0000 R CNN
+F 1 "Power LED" V 9898 5283 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 5400 50  0001 C CNN
+F 3 "~" H 9950 5400 50  0001 C CNN
+	1    9950 5400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 60F8AA52
-P 8500 4750
-F 0 "R5" H 8441 4704 50  0000 R CNN
-F 1 "150" H 8441 4795 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 4750 50  0001 C CNN
-F 3 "~" H 8500 4750 50  0001 C CNN
-	1    8500 4750
+P 9950 5150
+F 0 "R5" H 9891 5104 50  0000 R CNN
+F 1 "150" H 9891 5195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 5150 50  0001 C CNN
+F 3 "~" H 9950 5150 50  0001 C CNN
+	1    9950 5150
 	-1   0    0    1   
 $EndComp
-Text GLabel 8500 4650 1    50   Input ~ 0
+Text GLabel 9950 4650 1    50   Input ~ 0
 VCC
-Text GLabel 8500 5150 3    50   Input ~ 0
+Text GLabel 9950 5550 3    50   Input ~ 0
 GND
+Text GLabel 8550 4650 1    50   Input ~ 0
+VCC
+Text GLabel 9050 4850 2    50   Input ~ 0
+SS
+$Comp
+L Device:R_Small R7
+U 1 1 60FA3418
+P 8950 4850
+F 0 "R7" V 9050 4900 50  0000 R CNN
+F 1 "10k" V 8850 4900 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 4850 50  0001 C CNN
+F 3 "~" H 8950 4850 50  0001 C CNN
+	1    8950 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC857W Q1
+U 1 1 60FA42A1
+P 8650 4850
+F 0 "Q1" H 8841 4804 50  0000 L CNN
+F 1 "BC857CW" H 8841 4895 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 8850 4775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC857SERIES_BC858SERIES_BC859SERIES_BC860SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541da0e3a1661" H 8650 4850 50  0001 L CNN
+	1    8650 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60FB07A5
+P 8550 5400
+F 0 "D1" V 8589 5283 50  0000 R CNN
+F 1 "Activity LED" V 8498 5283 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8550 5400 50  0001 C CNN
+F 3 "~" H 8550 5400 50  0001 C CNN
+	1    8550 5400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8550 5550 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R6
+U 1 1 60FB8FAC
+P 8550 5150
+F 0 "R6" H 8491 5104 50  0000 R CNN
+F 1 "150" H 8491 5195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8550 5150 50  0001 C CNN
+F 3 "~" H 8550 5150 50  0001 C CNN
+	1    8550 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 4650 9950 5050
+Wire Notes Line
+	8000 4250 8000 6000
+Wire Notes Line
+	8000 6000 9350 6000
+Wire Notes Line
+	9350 6000 9350 4250
+Wire Notes Line
+	9350 4250 8000 4250
+Text Notes 8050 4350 0    50   ~ 0
+Optional Activity LED indicator
+Wire Notes Line
+	9500 4250 9500 6000
+Wire Notes Line
+	9500 6000 10850 6000
+Wire Notes Line
+	10850 6000 10850 4250
+Wire Notes Line
+	10850 4250 9500 4250
+Text Notes 9550 4350 0    50   ~ 0
+Optional Power LED indicator
+Wire Wire Line
+	8200 3800 8350 3800
+Wire Wire Line
+	8350 3800 8700 3800
+Connection ~ 8350 3800
+Wire Wire Line
+	8900 3800 9200 3800
+Connection ~ 9200 3800
+Wire Wire Line
+	9200 3800 9300 3800
+Wire Wire Line
+	9050 3600 9200 3600
+Connection ~ 9200 3600
+Text Notes 4750 4700 0    50   ~ 0
+Micro-USB jack used for +5V \npower supply only. Mandatory
+Wire Wire Line
+	4950 5700 5050 5700
+Text GLabel 5050 5700 3    50   Input ~ 0
+GND
+Text GLabel 5500 5100 1    50   Input ~ 0
+VCC
+NoConn ~ 5350 5500
+NoConn ~ 5350 5400
+NoConn ~ 5350 5300
+$Comp
+L Connector:USB_B_Micro J4
+U 1 1 610EC3C8
+P 5050 5300
+F 0 "J4" H 5107 5767 50  0000 C CNN
+F 1 "USB_B_Micro" H 5107 5676 50  0000 C CNN
+F 2 "SDBox-mini:USB_Micro-B_Unknown_5s_SMT" H 5200 5250 50  0001 C CNN
+F 3 "~" H 5200 5250 50  0001 C CNN
+	1    5050 5300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4650 4450 4650 6000
+Wire Notes Line
+	4650 6000 6050 6000
+Wire Notes Line
+	6050 4450 4650 4450
+Wire Notes Line
+	6050 6000 6050 4450
+$Comp
+L SDBox-mini:T491D227K010AT C12
+U 1 1 60F9E387
+P 6300 5300
+F 0 "C12" V 6450 5050 50  0000 C CNN
+F 1 "T491D227K010AT" V 6350 4800 50  0000 C CNN
+F 2 "SDBox-mini:CAPMP7343X430N" H 6300 5300 50  0001 L BNN
+F 3 "" H 6300 5300 50  0001 L BNN
+	1    6300 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 5100 6300 5100
+Wire Wire Line
+	5050 5700 6300 5700
+Wire Wire Line
+	6300 5700 6300 5400
+Connection ~ 5050 5700
 $EndSCHEMATC
