@@ -28,5 +28,13 @@ J3 | Micro SD Card Holder | 9pin Micro SD card slot connector | https://www.alie
 J4 | Micro USB connector | USB Micro B SMT | For +5V Power only <br />https://www.aliexpress.com/item/32991869539.html
 Y1 | Ceramic SMD quartz 16.0 MHz, LC 12 pF | 3 x 5 x 1 mm | For use with XTAL1, XTAL2 on AVR, https://www.reichelt.com/se/en/ceramic-smd-quartz-3-x-5-x-1-mm-16-0-mhz-16-000000-mj-p85005.html
 Q1 (Optional) | BC857CW <br />(PNP Polarity)| SOT-323_SC-70 | For Activity LED indicator, lights up LED D1 when CS (Chip Select on SD-Card) goes low
-D1 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | SD Activity LED indicator, Diffused Orange / Amber, pitch 2.54 mm, 1.8V-2.3V, 20-30 mA, 605-610nm
+D1 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | SD Activity LED indicator, Diffused Orange / Amber, 1.8V-2.3V, 20-30 mA, 605-610nm
 D2 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | Power LED indicator, Green Diffused T-1, 25 mcd, 565 nm, 2.2 V, 25 mA
+R1 | 10k Ohm Resistor | 0603 SMD | Pull-up (VCC) resistor for RESET-line
+R2 | 10k Ohm Resistor | 0603 SMD | Pull-up (3V3) resistor for MISO_3V3-line
+R3 | 10k Ohm Resistor | 0603 SMD | Series resistor in (RC) debounce circuit for CD-line (Change Detect)
+R4 | 10k Ohm Resistor | 0603 SMD | Pull-up (VCC) resistor in (RC) debounce circuit for CD-line (Change Detect)
+R5 | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D2 populated) Series resistor for D2 LED
+R6 | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D1 populated) Series resistor for D1 LED
+R7 | 10k Ohm Resistor | 0603 SMD | (Mandatory if D1 populated) Series resistor for Q1 transistor base pin (SS-line), D1 LED
+
