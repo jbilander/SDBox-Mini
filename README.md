@@ -26,3 +26,5 @@ J1 | D-sub DB25 | DB25 Male connector with solder lugs | DB25 for Amiga parallel
 J2 | FTDI pinheader | PinHeader_1x06_P2.54mm_Vertical | Pin header (GND,GND,VCC,RXI,TXO,DTR) for programming AVR via FTDI USB https://www.aliexpress.com/item/1005001680261289.html
 J3 | Micro SD Card Holder | 9pin Micro SD card slot connector | https://www.aliexpress.com/item/32802051702.html
 J4 | Micro USB connector | USB Micro B SMT | For +5V Power only <br />https://www.aliexpress.com/item/32991869539.html
+Y1 | Ceramic SMD quartz 16.0 MHz, LC 12 pF | 3 x 5 x 1 mm | For use with XTAL1, XTAL2 on AVR, https://www.reichelt.com/se/en/ceramic-smd-quartz-3-x-5-x-1-mm-16-0-mhz-16-000000-mj-p85005.html
+Q1 | BC857CW <br />(PNP Polarity)| SOT-323_SC-70 | Optional Activity LED indicator, lights up when CS (Chip Select on SD-Card) goes low
