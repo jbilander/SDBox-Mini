@@ -276,9 +276,9 @@ Wire Wire Line
 	5650 2100 5650 2250
 Wire Wire Line
 	5650 2250 5650 2400
-Text GLabel 4550 3700 2    50   BiDi ~ 0
+Text GLabel 4550 3800 2    50   BiDi ~ 0
 POUT
-Text GLabel 4550 1600 2    50   BiDi ~ 0
+Text GLabel 4550 3700 2    50   BiDi ~ 0
 BUSY
 Text GLabel 4550 3300 2    50   Input ~ 0
 RXI
@@ -317,7 +317,7 @@ RESET
 Wire Wire Line
 	4950 3100 5250 3100
 Connection ~ 4950 3100
-NoConn ~ 4550 3800
+NoConn ~ 4550 1600
 NoConn ~ 7900 2350
 Text GLabel 10200 3400 2    50   Output ~ 0
 MISO
