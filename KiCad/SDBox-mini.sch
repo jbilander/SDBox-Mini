@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C_Small C5
+L Device:C_Small C7
 U 1 1 606A3110
 P 3000 1600
-F 0 "C5" V 2850 1750 50  0000 R CNN
+F 0 "C7" V 2850 1750 50  0000 R CNN
 F 1 "0.1uF" V 2850 1400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 1600 50  0001 C CNN
 F 3 "~" H 3000 1600 50  0001 C CNN
@@ -214,10 +214,10 @@ $EndComp
 Text GLabel 5650 2250 2    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C7
+L Device:C_Small C9
 U 1 1 60FA06FB
 P 5550 2100
-F 0 "C7" V 5650 2250 50  0000 R CNN
+F 0 "C9" V 5650 2250 50  0000 R CNN
 F 1 "16pF" V 5650 1900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 2100 50  0001 C CNN
 F 3 "~" H 5550 2100 50  0001 C CNN
@@ -227,10 +227,10 @@ $EndComp
 Wire Wire Line
 	4900 2100 5300 2100
 $Comp
-L Device:C_Small C8
+L Device:C_Small C10
 U 1 1 60FA5116
 P 5550 2400
-F 0 "C8" V 5450 2550 50  0000 R CNN
+F 0 "C10" V 5450 2550 50  0000 R CNN
 F 1 "16pF" V 5450 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 2400 50  0001 C CNN
 F 3 "~" H 5550 2400 50  0001 C CNN
@@ -241,10 +241,10 @@ Wire Wire Line
 	5400 2250 5650 2250
 Connection ~ 5650 2250
 $Comp
-L Device:C_Small C6
+L Device:C_Small C8
 U 1 1 60FA7C64
 P 3700 1300
-F 0 "C6" V 3800 1450 50  0000 R CNN
+F 0 "C8" V 3800 1450 50  0000 R CNN
 F 1 "0.1uF" V 3800 1100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 1300 50  0001 C CNN
 F 3 "~" H 3700 1300 50  0001 C CNN
@@ -280,10 +280,6 @@ Text GLabel 4550 3800 2    50   BiDi ~ 0
 POUT
 Text GLabel 4550 3700 2    50   BiDi ~ 0
 BUSY
-Text GLabel 4550 3300 2    50   Input ~ 0
-RXI
-Text GLabel 4550 3400 2    50   Output ~ 0
-TXO
 NoConn ~ 2000 3950
 Text GLabel 4550 2000 2    50   Input ~ 0
 MISO
@@ -299,24 +295,8 @@ Wire Wire Line
 	4900 2300 4900 2400
 Wire Wire Line
 	4550 2300 4900 2300
-Text GLabel 5450 3100 2    50   Input ~ 0
-DTR
-$Comp
-L Device:C_Small C4
-U 1 1 60F8E9CC
-P 5350 3100
-F 0 "C4" V 5200 3250 50  0000 R CNN
-F 1 "0.1uF" V 5200 2900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5350 3100 50  0001 C CNN
-F 3 "~" H 5350 3100 50  0001 C CNN
-	1    5350 3100
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4950 3100 3    50   Input ~ 0
+Text GLabel 4950 3100 2    50   Input ~ 0
 RESET
-Wire Wire Line
-	4950 3100 5250 3100
-Connection ~ 4950 3100
 NoConn ~ 4550 1600
 NoConn ~ 7900 2350
 Text GLabel 10200 3400 2    50   Output ~ 0
@@ -422,34 +402,15 @@ Text GLabel 9550 2050 3    50   Input ~ 0
 GND
 Text GLabel 10500 1750 2    50   Output ~ 0
 3V3
-$Comp
-L Connector_Generic:Conn_01x06 J2
-U 1 1 6104A5C2
-P 2200 5000
-F 0 "J2" H 2118 4475 50  0000 C CNN
-F 1 "Conn_01x06" H 2118 4566 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2200 5000 50  0001 C CNN
-F 3 "~" H 2200 5000 50  0001 C CNN
-	1    2200 5000
-	-1   0    0    1   
-$EndComp
-Text GLabel 2400 5200 2    50   Input ~ 0
-DTR
-Text GLabel 2400 5100 2    50   Input ~ 0
-TXO
-Text GLabel 2400 5000 2    50   Output ~ 0
-RXI
-Text GLabel 2400 4900 2    50   Input ~ 0
+Text GLabel 3400 4950 2    50   Input ~ 0
 VCC
-Text GLabel 2400 4800 2    50   Input ~ 0
-GND
-Text GLabel 2400 4700 2    50   Input ~ 0
+Text GLabel 3400 5150 2    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C9
+L Device:C_Small C5
 U 1 1 61017825
 P 7550 3350
-F 0 "C9" H 7400 3250 50  0000 R CNN
+F 0 "C5" H 7400 3250 50  0000 R CNN
 F 1 "0.1uF" H 7200 3350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7550 3350 50  0001 C CNN
 F 3 "~" H 7550 3350 50  0001 C CNN
@@ -486,10 +447,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G17.pdf" H 10250 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C10
+L Device:C_Small C6
 U 1 1 61087309
 P 10700 3500
-F 0 "C10" H 10550 3400 50  0000 R CNN
+F 0 "C6" H 10550 3400 50  0000 R CNN
 F 1 "0.1uF" H 10350 3500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10700 3500 50  0001 C CNN
 F 3 "~" H 10700 3500 50  0001 C CNN
@@ -505,19 +466,8 @@ VCC
 Wire Wire Line
 	9050 3400 9300 3400
 Connection ~ 9050 3400
-Text GLabel 9050 3600 0    50   Input ~ 0
+Text GLabel 9300 3600 0    50   Input ~ 0
 GND
-$Comp
-L Device:R_Small R4
-U 1 1 61098AA5
-P 8350 3700
-F 0 "R4" H 8291 3654 50  0000 R CNN
-F 1 "10k" H 8291 3745 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8350 3700 50  0001 C CNN
-F 3 "~" H 8350 3700 50  0001 C CNN
-	1    8350 3700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9250 1950 9250 2050
 Wire Wire Line
@@ -555,36 +505,6 @@ $EndComp
 Text GLabel 6200 1450 0    50   Input ~ 0
 GND
 Text GLabel 7900 1450 2    50   Output ~ 0
-CD
-Text GLabel 8350 3600 1    50   Input ~ 0
-VCC
-$Comp
-L Device:R_Small R3
-U 1 1 610BDC67
-P 8800 3800
-F 0 "R3" V 8900 3850 50  0000 R CNN
-F 1 "10k" V 8700 3850 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8800 3800 50  0001 C CNN
-F 3 "~" H 8800 3800 50  0001 C CNN
-	1    8800 3800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 610C0199
-P 9200 3700
-F 0 "C11" H 9400 3700 50  0000 R CNN
-F 1 "0.1uF" H 9100 3900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9200 3700 50  0001 C CNN
-F 3 "~" H 9200 3700 50  0001 C CNN
-	1    9200 3700
-	-1   0    0    1   
-$EndComp
-Text GLabel 8200 3800 0    50   Input ~ 0
-CD
-Wire Wire Line
-	9200 3600 9300 3600
-Text GLabel 10200 3800 2    50   Output ~ 0
 CP
 Text GLabel 4550 3600 2    50   Input ~ 0
 CP
@@ -610,10 +530,10 @@ F 3 "~" H 9950 5400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R5
+L Device:R_Small R3
 U 1 1 60F8AA52
 P 9950 5150
-F 0 "R5" H 9891 5104 50  0000 R CNN
+F 0 "R3" H 9891 5104 50  0000 R CNN
 F 1 "150" H 9891 5195 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 5150 50  0001 C CNN
 F 3 "~" H 9950 5150 50  0001 C CNN
@@ -629,10 +549,10 @@ VCC
 Text GLabel 9050 4850 2    50   Input ~ 0
 SS
 $Comp
-L Device:R_Small R7
+L Device:R_Small R5
 U 1 1 60FA3418
 P 8950 4850
-F 0 "R7" V 9050 4900 50  0000 R CNN
+F 0 "R5" V 9050 4900 50  0000 R CNN
 F 1 "10k" V 8850 4900 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 4850 50  0001 C CNN
 F 3 "~" H 8950 4850 50  0001 C CNN
@@ -664,10 +584,10 @@ $EndComp
 Text GLabel 8550 5550 3    50   Input ~ 0
 GND
 $Comp
-L Device:R_Small R6
+L Device:R_Small R4
 U 1 1 60FB8FAC
 P 8550 5150
-F 0 "R6" H 8491 5104 50  0000 R CNN
+F 0 "R4" H 8491 5104 50  0000 R CNN
 F 1 "150" H 8491 5195 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8550 5150 50  0001 C CNN
 F 3 "~" H 8550 5150 50  0001 C CNN
@@ -696,19 +616,6 @@ Wire Notes Line
 	10850 4250 9500 4250
 Text Notes 9550 4350 0    50   ~ 0
 Optional Power LED indicator
-Wire Wire Line
-	8200 3800 8350 3800
-Wire Wire Line
-	8350 3800 8700 3800
-Connection ~ 8350 3800
-Wire Wire Line
-	8900 3800 9200 3800
-Connection ~ 9200 3800
-Wire Wire Line
-	9200 3800 9300 3800
-Wire Wire Line
-	9050 3600 9200 3600
-Connection ~ 9200 3600
 Text Notes 4750 4700 0    50   ~ 0
 Micro-USB jack used for +5V \npower supply only. Mandatory
 Wire Wire Line
@@ -740,10 +647,10 @@ Wire Notes Line
 Wire Notes Line
 	6050 6000 6050 4450
 $Comp
-L SDBox-mini:T491D227K010AT C12
+L SDBox-mini:T491D227K010AT C4
 U 1 1 60F9E387
 P 6300 5300
-F 0 "C12" V 6450 5050 50  0000 C CNN
+F 0 "C4" V 6450 5050 50  0000 C CNN
 F 1 "T491D227K010AT" V 6350 4800 50  0000 C CNN
 F 2 "SDBox-mini:CAPMP7343X430N" H 6300 5300 50  0001 L BNN
 F 3 "" H 6300 5300 50  0001 L BNN
@@ -757,4 +664,28 @@ Wire Wire Line
 Wire Wire Line
 	6300 5700 6300 5400
 Connection ~ 5050 5700
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 610260A5
+P 3100 5050
+F 0 "J2" H 3150 5367 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 3150 5276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3100 5050 50  0001 C CNN
+F 3 "~" H 3100 5050 50  0001 C CNN
+	1    3100 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 5150 0    50   Input ~ 0
+RESET
+Text GLabel 2900 5050 0    50   Input ~ 0
+SCK
+Text GLabel 2900 4950 0    50   Output ~ 0
+MISO
+Text GLabel 3400 5050 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	9300 3800 9300 3600
+NoConn ~ 10200 3800
+NoConn ~ 4550 3300
+NoConn ~ 4550 3400
 $EndSCHEMATC
