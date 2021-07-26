@@ -463,7 +463,7 @@ P 6950 4000
 F 0 "U3" H 6950 4915 50  0000 C CNN
 F 1 "74LVC3G17" H 6950 4824 50  0000 C CNN
 F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 7800 4400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7800 4400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC3G17.pdf" H 7800 4400 50  0001 C CNN
 	1    6950 4000
 	1    0    0    -1  
 $EndComp
@@ -548,7 +548,7 @@ P 7000 2050
 F 0 "J3" H 6950 1233 50  0000 C CNN
 F 1 "Micro_SD_Card" H 6950 1324 50  0000 C CNN
 F 2 "SDBox-mini:GCT-MEM2055-00-190-01-A" H 8150 2350 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7000 2050 50  0001 C CNN
+F 3 "" H 7000 2050 50  0001 C CNN
 	1    7000 2050
 	-1   0    0    1   
 $EndComp
