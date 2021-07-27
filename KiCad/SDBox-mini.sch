@@ -546,43 +546,19 @@ Text GLabel 9950 5550 3    50   Input ~ 0
 GND
 Text GLabel 8550 4650 1    50   Input ~ 0
 VCC
-Text GLabel 9050 4850 2    50   Input ~ 0
+Text GLabel 8550 5550 3    50   Input ~ 0
 SS
-$Comp
-L Device:R_Small R5
-U 1 1 60FA3418
-P 8950 4850
-F 0 "R5" V 9050 4900 50  0000 R CNN
-F 1 "10k" V 8850 4900 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 4850 50  0001 C CNN
-F 3 "~" H 8950 4850 50  0001 C CNN
-	1    8950 4850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Transistor_BJT:BC857W Q1
-U 1 1 60FA42A1
-P 8650 4850
-F 0 "Q1" H 8841 4804 50  0000 L CNN
-F 1 "BC857CW" H 8841 4895 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 8850 4775 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/Infineon-BC857SERIES_BC858SERIES_BC859SERIES_BC860SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541da0e3a1661" H 8650 4850 50  0001 L CNN
-	1    8650 4850
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:LED D1
 U 1 1 60FB07A5
-P 8550 5400
-F 0 "D1" V 8589 5283 50  0000 R CNN
-F 1 "Activity LED" V 8498 5283 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8550 5400 50  0001 C CNN
-F 3 "~" H 8550 5400 50  0001 C CNN
-	1    8550 5400
+P 8550 4800
+F 0 "D1" V 8589 4683 50  0000 R CNN
+F 1 "Activity LED" V 8498 4683 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8550 4800 50  0001 C CNN
+F 3 "~" H 8550 4800 50  0001 C CNN
+	1    8550 4800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8550 5550 3    50   Input ~ 0
-GND
 $Comp
 L Device:R_Small R4
 U 1 1 60FB8FAC
@@ -688,4 +664,8 @@ Wire Wire Line
 NoConn ~ 10200 3800
 NoConn ~ 4550 3300
 NoConn ~ 4550 3400
+Wire Wire Line
+	8550 4950 8550 5050
+Wire Wire Line
+	8550 5250 8550 5550
 $EndSCHEMATC
