@@ -14,11 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C_Small C7
+L Device:C_Small C11
 U 1 1 606A3110
 P 3000 1600
-F 0 "C7" V 2850 1750 50  0000 R CNN
-F 1 "0.1uF" V 2850 1400 50  0000 L CNN
+F 0 "C11" V 3100 1650 50  0000 R CNN
+F 1 "0.1uF" V 2900 1450 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 1600 50  0001 C CNN
 F 3 "~" H 3000 1600 50  0001 C CNN
 	1    3000 1600
@@ -142,10 +142,10 @@ NoConn ~ 2000 3650
 Text GLabel 2000 3750 0    50   BiDi ~ 0
 D0
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U1
+L MCU_Microchip_ATmega:ATmega328P-AU U2
 U 1 1 60F7C9EE
 P 3950 2800
-F 0 "U1" H 3950 2800 50  0000 C CNN
+F 0 "U2" H 3950 2800 50  0000 C CNN
 F 1 "ATmega328P-AU" H 3850 2900 50  0000 C CNN
 F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3950 2800 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 3950 2800 50  0001 C CNN
@@ -241,10 +241,10 @@ Wire Wire Line
 	5400 2250 5650 2250
 Connection ~ 5650 2250
 $Comp
-L Device:C_Small C8
+L Device:C_Small C6
 U 1 1 60FA7C64
 P 3700 1300
-F 0 "C8" V 3800 1450 50  0000 R CNN
+F 0 "C6" V 3800 1450 50  0000 R CNN
 F 1 "0.1uF" V 3800 1100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 1300 50  0001 C CNN
 F 3 "~" H 3700 1300 50  0001 C CNN
@@ -348,10 +348,10 @@ SCK_3V3
 Text GLabel 7900 1950 2    50   Input ~ 0
 SCK_3V3
 $Comp
-L Regulator_Linear:LM1117-3.3 U2
+L Regulator_Linear:LM1117-3.3 U1
 U 1 1 61034FEA
 P 9550 1750
-F 0 "U2" H 9550 1992 50  0000 C CNN
+F 0 "U1" H 9550 1992 50  0000 C CNN
 F 1 "LM1117-3.3" H 9550 1901 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 9550 1750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 9550 1750 50  0001 C CNN
@@ -361,10 +361,10 @@ $EndComp
 Text GLabel 9000 1750 0    50   Input ~ 0
 VCC
 $Comp
-L Device:C_Small C1
+L Device:C_Small C2
 U 1 1 610421CE
 P 9250 1850
-F 0 "C1" H 9150 1850 50  0000 R CNN
+F 0 "C2" H 9150 1850 50  0000 R CNN
 F 1 "10uF" H 9000 1750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9250 1850 50  0001 C CNN
 F 3 "~" H 9250 1850 50  0001 C CNN
@@ -372,10 +372,10 @@ F 3 "~" H 9250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L Device:C_Small C3
 U 1 1 610444D0
 P 9950 1850
-F 0 "C2" H 10150 1850 50  0000 R CNN
+F 0 "C3" H 10150 1850 50  0000 R CNN
 F 1 "10uF" H 10000 1750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9950 1850 50  0001 C CNN
 F 3 "~" H 9950 1850 50  0001 C CNN
@@ -383,10 +383,10 @@ F 3 "~" H 9950 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L Device:C_Small C4
 U 1 1 6104580B
 P 10300 1850
-F 0 "C3" H 10200 1850 50  0000 R CNN
+F 0 "C4" H 10200 1850 50  0000 R CNN
 F 1 "0.1uF" H 10050 1950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10300 1850 50  0001 C CNN
 F 3 "~" H 10300 1850 50  0001 C CNN
@@ -402,15 +402,15 @@ Text GLabel 9550 2050 3    50   Input ~ 0
 GND
 Text GLabel 10500 1750 2    50   Output ~ 0
 3V3
-Text GLabel 3400 4950 2    50   Input ~ 0
+Text GLabel 3650 4950 2    50   Input ~ 0
 VCC
 Text GLabel 3400 5150 2    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C5
+L Device:C_Small C7
 U 1 1 61017825
 P 7550 3350
-F 0 "C5" H 7400 3250 50  0000 R CNN
+F 0 "C7" H 7400 3250 50  0000 R CNN
 F 1 "0.1uF" H 7200 3350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7550 3350 50  0001 C CNN
 F 3 "~" H 7550 3350 50  0001 C CNN
@@ -447,10 +447,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G17.pdf" H 10250 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C6
+L Device:C_Small C8
 U 1 1 61087309
 P 10700 3500
-F 0 "C6" H 10550 3400 50  0000 R CNN
+F 0 "C8" H 10550 3400 50  0000 R CNN
 F 1 "0.1uF" H 10350 3500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10700 3500 50  0001 C CNN
 F 3 "~" H 10700 3500 50  0001 C CNN
@@ -623,10 +623,10 @@ Wire Notes Line
 Wire Notes Line
 	6050 6000 6050 4450
 $Comp
-L SDBox-mini:T491D227K010AT C4
+L SDBox-mini:T491D227K010AT C1
 U 1 1 60F9E387
 P 6300 5300
-F 0 "C4" V 6450 5050 50  0000 C CNN
+F 0 "C1" V 6450 5050 50  0000 C CNN
 F 1 "T491D227K010AT" V 6350 4800 50  0000 C CNN
 F 2 "SDBox-mini:CAPMP7343X430N" H 6300 5300 50  0001 L BNN
 F 3 "" H 6300 5300 50  0001 L BNN
@@ -668,4 +668,19 @@ Wire Wire Line
 	8550 4950 8550 5050
 Wire Wire Line
 	8550 5250 8550 5550
+$Comp
+L Device:C_Small C5
+U 1 1 61173877
+P 3650 4850
+F 0 "C5" H 3850 4950 50  0000 R CNN
+F 1 "1-10uF" H 3750 4850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 4850 50  0001 C CNN
+F 3 "~" H 3650 4850 50  0001 C CNN
+	1    3650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4950 3400 4950
+Text GLabel 3650 4750 1    50   Input ~ 0
+GND
 $EndSCHEMATC
