@@ -29,19 +29,18 @@ J4 | Micro USB connector | USB Micro B SMT | For +5V Power only <br />https://ww
 Y1 | Ceramic SMD quartz 16.0 MHz, LC 12 pF | 3 x 5 x 1 mm | For use with XTAL1, XTAL2 on AVR https://www.reichelt.com/se/en/ceramic-smd-quartz-3-x-5-x-1-mm-16-0-mhz-16-000000-mj-p85005.html
 D1 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | SD Activity LED indicator, Diffused Orange / Amber, 1.8V-2.3V, 20-30 mA, 605-610nm
 D2 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | Power LED indicator, Green Diffused T-1, 25 mcd, 565 nm, 2.2 V, 25 mA
-R1 | 10k Ohm Resistor | 0603 SMD | Pull-up (VCC) resistor for RESET-line
-R2 | 10k Ohm Resistor | 0603 SMD | Pull-up (3V3) resistor for MISO_3V3-line
-R3 | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D2 populated) Series resistor for D2 LED
-R4 | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D1 populated) Series resistor for D1 LED
+R1 (Optional) | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D1 populated) Series resistor for D1 LED, adjust R-value to your type of LED and preferred brightness
+R2 (Optional) | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D2 populated) Series resistor for D2 LED, adjust R-value to your type of LED and preferred brightness
+R3 | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for SS
+R4 | 10k Ohm Resistor | 0603 SMD | Pull-up (to 3V3) resistor for MISO_3V3
+R5 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (VCC) resistor for /RESET
 C1 | 220uF Capacitor | SMD-Tantalum, 4.3 x 7.3 x 2.8 mm | Capacitor for VIN +5V Power via USB https://www.reichelt.com/se/en/smd-tantalum-220-f-10v-125-c-t491d-220u-10-p206492.html
 C2 | 10uF Capacitor | 1206 SMD | Capacitor (VCC) for Voltage regulator U1
 C3 | 10uF Capacitor | 1206 SMD | Capacitor (3V3) for Voltage regulator U1
 C4 | 0.1uF = 100nF Capacitor | 0603 SMD | Capacitor (3V3) for Voltage regulator U1
-C5 (Optional) | 1uF-10uF Capacitor | 0805 SMD | Decoupling capacitor for VCC-pin on ICSP-header
-C6 | 0.1uF = 100nF Capacitor | 0603 SMD | Decoupling capacitor for U2
-C7 | 0.1uF = 100nF Capacitor | 0603 SMD | Decoupling capacitor for U3
-C8 | 0.1uF = 100nF Capacitor | 0603 SMD | Decoupling capacitor for U4
-C9 | 16pF Capacitor | 0603 SMD | Capacitor for XTAL1 (Y1)
-C10 | 16pF Capacitor | 0603 SMD | Capacitor for XTAL2 (Y1)
-C11 | 0.1uF = 100nF Capacitor | 0603 SMD | Coupling capacitor for AREF to GND
+C5 | 0.1uF = 100nF Capacitor | 0603 SMD | Decoupling capacitor for U2
+C6 | 0.1uF = 100nF Capacitor | 0603 SMD | Decoupling capacitor for U3
+C7 | 0.1uF = 100nF Capacitor | 0603 SMD | Decoupling capacitor for U4
+C8 | 16pF Capacitor | 0603 SMD | Capacitor for XTAL1 (Y1)
+C9 | 16pF Capacitor | 0603 SMD | Capacitor for XTAL2 (Y1)
 X | D-Sub DB25 | Two DB25 plastic shells with screws and nuts | Plastic hood cover x 2
