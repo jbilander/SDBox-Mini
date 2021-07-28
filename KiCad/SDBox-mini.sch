@@ -405,7 +405,7 @@ U 1 1 610573DA
 P 6950 4000
 F 0 "U3" H 6950 4915 50  0000 C CNN
 F 1 "74LVC3G17" H 6950 4824 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 7800 4400 50  0001 C CNN
+F 2 "SDBox-mini:TSSOP-8_3x3mm_P0.65mm_Custom_Handsoldering" H 7800 4400 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC3G17.pdf" H 7800 4400 50  0001 C CNN
 	1    6950 4000
 	1    0    0    -1  
