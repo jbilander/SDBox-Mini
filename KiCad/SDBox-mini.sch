@@ -281,7 +281,7 @@ Wire Wire Line
 Text GLabel 4950 3100 2    50   Input ~ 0
 RESET
 NoConn ~ 7900 2350
-Text GLabel 10200 3400 2    50   Output ~ 0
+Text GLabel 10100 3700 2    50   Output ~ 0
 MISO
 Text GLabel 7900 1850 2    50   Input ~ 0
 GND
@@ -305,15 +305,15 @@ GND
 $Comp
 L Device:R_Small R4
 U 1 1 6101E2BD
-P 9050 3300
-F 0 "R4" H 8991 3254 50  0000 R CNN
-F 1 "10k" H 8991 3345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9050 3300 50  0001 C CNN
-F 3 "~" H 9050 3300 50  0001 C CNN
-	1    9050 3300
+P 8950 3400
+F 0 "R4" H 8891 3354 50  0000 R CNN
+F 1 "10k" H 8891 3445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 3400 50  0001 C CNN
+F 3 "~" H 8950 3400 50  0001 C CNN
+	1    8950 3400
 	-1   0    0    1   
 $EndComp
-Text GLabel 9050 3200 1    50   Input ~ 0
+Text GLabel 8950 3300 1    50   Input ~ 0
 3V3
 Text GLabel 7900 2150 2    50   Input ~ 0
 MOSI_3V3
@@ -321,10 +321,10 @@ Text GLabel 7350 3800 2    50   Output ~ 0
 MOSI_3V3
 Text GLabel 7900 1750 2    50   Output ~ 0
 MISO_3V3
-Text GLabel 8950 3400 0    50   Input ~ 0
+Text GLabel 8850 3500 0    50   Input ~ 0
 MISO_3V3
 Wire Wire Line
-	8950 3400 9050 3400
+	8850 3500 8950 3500
 Text GLabel 6550 3800 0    50   Output ~ 0
 SCK_3V3
 Text GLabel 7900 1950 2    50   Input ~ 0
@@ -418,37 +418,26 @@ Connection ~ 7550 3450
 Wire Wire Line
 	7550 3450 7400 3450
 $Comp
-L SDBox-mini:74HCT2G17 U4
-U 1 1 6107F418
-P 9750 3600
-F 0 "U4" H 9750 4115 50  0000 C CNN
-F 1 "74HCT2G17" H 9750 4024 50  0000 C CNN
-F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 10250 4550 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G17.pdf" H 10250 4550 50  0001 C CNN
-	1    9750 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C7
 U 1 1 61087309
-P 10700 3500
-F 0 "C7" H 10550 3400 50  0000 R CNN
-F 1 "0.1uF" H 10350 3500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10700 3500 50  0001 C CNN
-F 3 "~" H 10700 3500 50  0001 C CNN
-	1    10700 3500
+P 10300 3200
+F 0 "C7" H 10200 3100 50  0000 R CNN
+F 1 "0.1uF" H 10000 3200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10300 3200 50  0001 C CNN
+F 3 "~" H 10300 3200 50  0001 C CNN
+	1    10300 3200
 	-1   0    0    1   
 $EndComp
-Text GLabel 10700 3400 1    50   Input ~ 0
+Text GLabel 10300 3100 1    50   Input ~ 0
 GND
 Wire Wire Line
-	10700 3600 10200 3600
-Text GLabel 10700 3600 3    50   Input ~ 0
+	10600 3300 10300 3300
+Text GLabel 10600 3300 2    50   Input ~ 0
 VCC
 Wire Wire Line
-	9050 3400 9300 3400
-Connection ~ 9050 3400
-Text GLabel 9300 3600 0    50   Input ~ 0
+	8950 3500 9200 3500
+Connection ~ 8950 3500
+Text GLabel 9200 3700 0    50   Input ~ 0
 GND
 Wire Wire Line
 	9250 1950 9250 2050
@@ -606,8 +595,8 @@ $Comp
 L SDBox-mini:T491D227K010AT C1
 U 1 1 60F9E387
 P 6300 5300
-F 0 "C1" V 6450 5050 50  0000 C CNN
-F 1 "T491D227K010AT" V 6350 4800 50  0000 C CNN
+F 0 "C1" V 6350 5100 50  0000 C CNN
+F 1 "220uF  (T491D227K010AT)" V 6250 4650 50  0000 C CNN
 F 2 "SDBox-mini:CAPMP7343X430N" H 6300 5300 50  0001 L BNN
 F 3 "" H 6300 5300 50  0001 L BNN
 	1    6300 5300
@@ -639,9 +628,6 @@ Text GLabel 2900 4950 0    50   Output ~ 0
 MISO
 Text GLabel 3400 5050 2    50   Input ~ 0
 MOSI
-Wire Wire Line
-	9300 3800 9300 3600
-NoConn ~ 10200 3800
 NoConn ~ 4550 3300
 NoConn ~ 4550 3400
 Wire Wire Line
@@ -671,4 +657,18 @@ Wire Wire Line
 Connection ~ 6050 4150
 Wire Wire Line
 	6050 4150 6550 4150
+$Comp
+L SDBox-mini:74LVC1G17 U4
+U 1 1 611C568A
+P 9650 3500
+F 0 "U4" H 9650 4015 50  0000 C CNN
+F 1 "74LVC1G17" H 9650 3924 50  0000 C CNN
+F 2 "SDBox-mini:SOT-353_SC-70-5_Custom_Handsoldering" H 10150 4450 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17-q1.pdf" H 10150 4450 50  0001 C CNN
+	1    9650 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 10300 3300
+Wire Wire Line
+	10300 3300 10100 3300
 $EndSCHEMATC
