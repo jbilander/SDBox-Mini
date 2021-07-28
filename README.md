@@ -20,8 +20,8 @@ Position  | Name/Value   | Package | Notes
 -|-|-|-|
 U1 | LM1117-3.3 | SOT-223 | Low-Dropout Linear Regulator 3.3 Volt
 U2 | ATMega328P-AU | TQFP-32_7x7mm_P0.8mm | 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash
-U3 | 74LVC3G17 | TSSOP-8_3x3mm_P0.65mm | Triple non-inverting Schmitt trigger with 5V tolerant input
-U4 | 74LVC2G17 or 74HCT2G17 | TSOP-6_1.65x3.05mm_P0.95mm | Dual non-inverting Schmitt trigger
+U3 | 74LVC3G17 | TSSOP-8_3x3mm_P0.65mm | Triple non-inverting Schmitt trigger with 5V tolerant input https://assets.nexperia.com/documents/data-sheet/74LVC3G17.pdf
+U4 | 74LVC1G17 | SOT-353_SC-70-5 | Single non-inverting Schmitt trigger https://www.ti.com/lit/ds/symlink/sn74lvc1g17-q1.pdf
 J1 | D-Sub DB25 | DB25 Male connector with solder lugs | DB25 for Amiga parallel port
 J2 | ICSP | PinHeader_2x03_P2.54mm_Vertical | Pin header _(MISO,VCC,SCK,MOSI,/RESET,GND)_ for flashing AVR via In-Circuit Serial Programming
 J3 | Micro SD Card Holder | 9-pin Micro SD card slot connector | https://www.aliexpress.com/item/32802051702.html
