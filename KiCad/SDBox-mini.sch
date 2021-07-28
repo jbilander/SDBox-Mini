@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:C_Small C11
-U 1 1 606A3110
-P 3000 1600
-F 0 "C11" V 3100 1650 50  0000 R CNN
-F 1 "0.1uF" V 2900 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 1600 50  0001 C CNN
-F 3 "~" H 3000 1600 50  0001 C CNN
-	1    3000 1600
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2900 1600 0    50   Input ~ 0
-GND
 Text GLabel 950  950  0    50   Input ~ 0
 VCC
 $Comp
@@ -190,10 +177,6 @@ $EndComp
 NoConn ~ 2000 3850
 Text GLabel 4950 2800 1    50   Input ~ 0
 VCC
-Text Label 3100 1600 0    50   ~ 0
-AREF
-Wire Wire Line
-	3100 1600 3350 1600
 Wire Wire Line
 	4550 3100 4950 3100
 Wire Wire Line
@@ -683,4 +666,5 @@ Wire Wire Line
 	3650 4950 3400 4950
 Text GLabel 3650 4750 1    50   Input ~ 0
 GND
+NoConn ~ 3350 1600
 $EndSCHEMATC
