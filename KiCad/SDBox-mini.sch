@@ -164,10 +164,10 @@ VCC
 Wire Wire Line
 	3950 1300 4050 1300
 $Comp
-L Device:R_Small R1
+L Device:R_Small R5
 U 1 1 60F84B00
 P 4950 2900
-F 0 "R1" H 4891 2854 50  0000 R CNN
+F 0 "R5" H 4891 2854 50  0000 R CNN
 F 1 "10k" H 4891 2945 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 2900 50  0001 C CNN
 F 3 "~" H 4950 2900 50  0001 C CNN
@@ -280,7 +280,6 @@ Wire Wire Line
 	4550 2300 4900 2300
 Text GLabel 4950 3100 2    50   Input ~ 0
 RESET
-NoConn ~ 4550 1600
 NoConn ~ 7900 2350
 Text GLabel 10200 3400 2    50   Output ~ 0
 MISO
@@ -304,10 +303,10 @@ CS
 Text GLabel 7550 3250 1    50   Input ~ 0
 GND
 $Comp
-L Device:R_Small R2
+L Device:R_Small R4
 U 1 1 6101E2BD
 P 9050 3300
-F 0 "R2" H 8991 3254 50  0000 R CNN
+F 0 "R4" H 8991 3254 50  0000 R CNN
 F 1 "10k" H 8991 3345 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9050 3300 50  0001 C CNN
 F 3 "~" H 9050 3300 50  0001 C CNN
@@ -499,7 +498,7 @@ Wire Wire Line
 	3950 1150 3950 1300
 Text GLabel 4550 1800 2    50   Output ~ 0
 SS
-Text GLabel 6550 4150 0    50   Input ~ 0
+Text GLabel 5850 4150 0    50   Input ~ 0
 SS
 $Comp
 L Device:LED D2
@@ -513,10 +512,10 @@ F 3 "~" H 9950 5400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R3
+L Device:R_Small R2
 U 1 1 60F8AA52
 P 9950 5150
-F 0 "R3" H 9891 5104 50  0000 R CNN
+F 0 "R2" H 9891 5104 50  0000 R CNN
 F 1 "150" H 9891 5195 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 5150 50  0001 C CNN
 F 3 "~" H 9950 5150 50  0001 C CNN
@@ -529,8 +528,6 @@ Text GLabel 9950 5550 3    50   Input ~ 0
 GND
 Text GLabel 8550 4650 1    50   Input ~ 0
 VCC
-Text GLabel 8550 5550 3    50   Input ~ 0
-SS
 $Comp
 L Device:LED D1
 U 1 1 60FB07A5
@@ -543,10 +540,10 @@ F 3 "~" H 8550 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R4
+L Device:R_Small R1
 U 1 1 60FB8FAC
 P 8550 5150
-F 0 "R4" H 8491 5104 50  0000 R CNN
+F 0 "R1" H 8491 5104 50  0000 R CNN
 F 1 "150" H 8491 5195 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8550 5150 50  0001 C CNN
 F 3 "~" H 8550 5150 50  0001 C CNN
@@ -667,4 +664,26 @@ Wire Wire Line
 Text GLabel 3650 4750 1    50   Input ~ 0
 GND
 NoConn ~ 3350 1600
+Text GLabel 4550 1600 2    50   Input ~ 0
+ACT_LED
+Text GLabel 8550 5550 3    50   Output ~ 0
+ACT_LED
+$Comp
+L Device:R_Small R3
+U 1 1 6119A937
+P 6050 4050
+F 0 "R3" H 5991 4004 50  0000 R CNN
+F 1 "10k" H 5991 4095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6050 4050 50  0001 C CNN
+F 3 "~" H 6050 4050 50  0001 C CNN
+	1    6050 4050
+	-1   0    0    1   
+$EndComp
+Text GLabel 6050 3950 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	5850 4150 6050 4150
+Connection ~ 6050 4150
+Wire Wire Line
+	6050 4150 6550 4150
 $EndSCHEMATC
