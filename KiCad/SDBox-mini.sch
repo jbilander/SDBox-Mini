@@ -197,10 +197,10 @@ $EndComp
 Text GLabel 5650 2250 2    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C9
+L Device:C_Small C8
 U 1 1 60FA06FB
 P 5550 2100
-F 0 "C9" V 5650 2250 50  0000 R CNN
+F 0 "C8" V 5650 2250 50  0000 R CNN
 F 1 "16pF" V 5650 1900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 2100 50  0001 C CNN
 F 3 "~" H 5550 2100 50  0001 C CNN
@@ -210,10 +210,10 @@ $EndComp
 Wire Wire Line
 	4900 2100 5300 2100
 $Comp
-L Device:C_Small C10
+L Device:C_Small C9
 U 1 1 60FA5116
 P 5550 2400
-F 0 "C10" V 5450 2550 50  0000 R CNN
+F 0 "C9" V 5450 2550 50  0000 R CNN
 F 1 "16pF" V 5450 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 2400 50  0001 C CNN
 F 3 "~" H 5550 2400 50  0001 C CNN
@@ -224,10 +224,10 @@ Wire Wire Line
 	5400 2250 5650 2250
 Connection ~ 5650 2250
 $Comp
-L Device:C_Small C6
+L Device:C_Small C5
 U 1 1 60FA7C64
 P 3700 1300
-F 0 "C6" V 3800 1450 50  0000 R CNN
+F 0 "C5" V 3800 1450 50  0000 R CNN
 F 1 "0.1uF" V 3800 1100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 1300 50  0001 C CNN
 F 3 "~" H 3700 1300 50  0001 C CNN
@@ -384,15 +384,15 @@ Text GLabel 9550 2050 3    50   Input ~ 0
 GND
 Text GLabel 10500 1750 2    50   Output ~ 0
 3V3
-Text GLabel 3650 4950 2    50   Input ~ 0
+Text GLabel 3400 4950 2    50   Input ~ 0
 VCC
 Text GLabel 3400 5150 2    50   Input ~ 0
 GND
 $Comp
-L Device:C_Small C7
+L Device:C_Small C6
 U 1 1 61017825
 P 7550 3350
-F 0 "C7" H 7400 3250 50  0000 R CNN
+F 0 "C6" H 7400 3250 50  0000 R CNN
 F 1 "0.1uF" H 7200 3350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7550 3350 50  0001 C CNN
 F 3 "~" H 7550 3350 50  0001 C CNN
@@ -429,10 +429,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G17.pdf" H 10250 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L Device:C_Small C7
 U 1 1 61087309
 P 10700 3500
-F 0 "C8" H 10550 3400 50  0000 R CNN
+F 0 "C7" H 10550 3400 50  0000 R CNN
 F 1 "0.1uF" H 10350 3500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10700 3500 50  0001 C CNN
 F 3 "~" H 10700 3500 50  0001 C CNN
@@ -648,21 +648,6 @@ Wire Wire Line
 	8550 4950 8550 5050
 Wire Wire Line
 	8550 5250 8550 5550
-$Comp
-L Device:C_Small C5
-U 1 1 61173877
-P 3650 4850
-F 0 "C5" H 3850 4950 50  0000 R CNN
-F 1 "1-10uF" H 3750 4850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 4850 50  0001 C CNN
-F 3 "~" H 3650 4850 50  0001 C CNN
-	1    3650 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 4950 3400 4950
-Text GLabel 3650 4750 1    50   Input ~ 0
-GND
 NoConn ~ 3350 1600
 Text GLabel 4550 1600 2    50   Input ~ 0
 ACT_LED
