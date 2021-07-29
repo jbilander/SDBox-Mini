@@ -289,7 +289,7 @@ Text GLabel 7350 4150 2    50   Input ~ 0
 SCK
 Text GLabel 7900 2050 2    50   Input ~ 0
 3V3
-Text GLabel 6550 3450 0    50   Input ~ 0
+Text GLabel 6150 3450 0    50   Input ~ 0
 MOSI
 NoConn ~ 7900 1650
 Text GLabel 7900 2250 2    50   Input ~ 0
@@ -671,4 +671,22 @@ $EndComp
 Connection ~ 10300 3300
 Wire Wire Line
 	10300 3300 10100 3300
+$Comp
+L Device:R_Small R6
+U 1 1 612033E9
+P 6350 3350
+F 0 "R6" H 6291 3304 50  0000 R CNN
+F 1 "10k" H 6291 3395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6350 3350 50  0001 C CNN
+F 3 "~" H 6350 3350 50  0001 C CNN
+	1    6350 3350
+	-1   0    0    1   
+$EndComp
+Text GLabel 6350 3250 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	6350 3450 6550 3450
+Wire Wire Line
+	6150 3450 6350 3450
+Connection ~ 6350 3450
 $EndSCHEMATC
