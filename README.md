@@ -37,7 +37,8 @@ R1 (Optional) | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D1 populated
 R2 (Optional) | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D2 populated) Series resistor for D2 LED, adjust R-value to your type of LED and preferred brightness
 R3 | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for /SS
 R4 | 10k Ohm Resistor | 0603 SMD | Pull-up (to 3V3) resistor for MISO_3V3
-R5 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (VCC) resistor for /RESET
+R5 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for /RESET
+R6 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for MOSI
 C1 | 220uF Capacitor | SMD-Tantalum, 4.3 x 7.3 x 2.8 mm | Capacitor for VIN +5V Power via USB https://www.reichelt.com/se/en/smd-tantalum-220-f-10v-125-c-t491d-220u-10-p206492.html
 C2 | 10uF Capacitor | 1206 SMD | Capacitor (VCC) for Voltage regulator U1
 C3 | 10uF Capacitor | 1206 SMD | Capacitor (3V3) for Voltage regulator U1
