@@ -36,10 +36,12 @@ D2 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | P
 R1 (Optional) | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D1 populated) Series resistor for D1 LED, adjust R-value to your type of LED and preferred brightness
 R2 (Optional) | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D2 populated) Series resistor for D2 LED, adjust R-value to your type of LED and preferred brightness
 R3 | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for /SS
-R4 | 10k Ohm Resistor | 0603 SMD | Pull-up (to 3V3) resistor for MISO_3V3
-R5 | 10k Ohm Resistor | 0603 SMD | Common pull-up (to 3V3) for DAT1,DAT2-lines (pin 8 and 1) on MicroSD-holder
-R6 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for MOSI
-R7 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for /RESET
+R4 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for MOSI
+R5 (Optional) | 10k Ohm Resistor | 0603 SMD | Pull-up (to VCC) resistor for /RESET
+RN1 | CAY16-103J4LF RES ARRAY 4 Resistors 10k | 1206 SMD | https://www.digikey.se/product-detail/sv/bourns-inc/CAY16-103J4LF/CAY16-103J4LFCT-ND/
+RN1 | | | Pull-up (to 3V3) for MISO_3V3
+RN1 | | | Pull-up (to 3V3) for DAT1 pin 8 on MicroSD-holder
+RN1 | | | Pull-up (to 3V3) for DAT2 pin 1 on MicroSD-holder
 C1 | 220uF Capacitor | SMD-Tantalum, 4.3 x 7.3 x 2.8 mm | Capacitor for VIN +5V Power via USB https://www.reichelt.com/se/en/smd-tantalum-220-f-10v-125-c-t491d-220u-10-p206492.html
 C2 | 10uF Capacitor | 1206 SMD | Capacitor (VCC) for Voltage regulator U1
 C3 | 10uF Capacitor | 1206 SMD | Capacitor (3V3) for Voltage regulator U1
