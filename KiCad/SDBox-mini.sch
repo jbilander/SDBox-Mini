@@ -164,10 +164,10 @@ VCC
 Wire Wire Line
 	3950 1300 4050 1300
 $Comp
-L Device:R_Small R7
+L Device:R_Small R5
 U 1 1 60F84B00
 P 4950 2900
-F 0 "R7" H 4891 2854 50  0000 R CNN
+F 0 "R5" H 4891 2854 50  0000 R CNN
 F 1 "10k" H 4891 2945 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 2900 50  0001 C CNN
 F 3 "~" H 4950 2900 50  0001 C CNN
@@ -300,29 +300,14 @@ Text GLabel 7350 4500 2    50   Output ~ 0
 CS
 Text GLabel 7550 3250 1    50   Input ~ 0
 GND
-$Comp
-L Device:R_Small R4
-U 1 1 6101E2BD
-P 8950 3400
-F 0 "R4" H 8891 3354 50  0000 R CNN
-F 1 "10k" H 8891 3445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 3400 50  0001 C CNN
-F 3 "~" H 8950 3400 50  0001 C CNN
-	1    8950 3400
-	-1   0    0    1   
-$EndComp
-Text GLabel 8950 3300 1    50   Input ~ 0
-3V3
 Text GLabel 7900 2150 2    50   Input ~ 0
 MOSI_3V3
 Text GLabel 7350 3800 2    50   Output ~ 0
 MOSI_3V3
 Text GLabel 7900 1750 2    50   Output ~ 0
 MISO_3V3
-Text GLabel 8850 3500 0    50   Input ~ 0
+Text GLabel 9200 3500 0    50   Input ~ 0
 MISO_3V3
-Wire Wire Line
-	8850 3500 8950 3500
 Text GLabel 6550 3800 0    50   Output ~ 0
 SCK_3V3
 Text GLabel 7900 1950 2    50   Input ~ 0
@@ -432,9 +417,6 @@ Wire Wire Line
 	10600 3300 10300 3300
 Text GLabel 10600 3300 2    50   Input ~ 0
 VCC
-Wire Wire Line
-	8950 3500 9200 3500
-Connection ~ 8950 3500
 Text GLabel 9200 3700 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -670,10 +652,10 @@ Connection ~ 10300 3300
 Wire Wire Line
 	10300 3300 10100 3300
 $Comp
-L Device:R_Small R6
+L Device:R_Small R4
 U 1 1 612033E9
 P 6350 3350
-F 0 "R6" H 6291 3304 50  0000 R CNN
+F 0 "R4" H 6291 3304 50  0000 R CNN
 F 1 "10k" H 6291 3395 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6350 3350 50  0001 C CNN
 F 3 "~" H 6350 3350 50  0001 C CNN
@@ -687,28 +669,39 @@ Wire Wire Line
 Wire Wire Line
 	6150 3450 6350 3450
 Connection ~ 6350 3450
-$Comp
-L Device:R_Small R5
-U 1 1 612155E1
-P 8500 1850
-F 0 "R5" H 8441 1804 50  0000 R CNN
-F 1 "10k" H 8441 1895 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 1850 50  0001 C CNN
-F 3 "~" H 8500 1850 50  0001 C CNN
-	1    8500 1850
-	-1   0    0    1   
-$EndComp
-Text GLabel 8500 1750 1    50   Input ~ 0
+Text GLabel 8250 1050 1    50   Input ~ 0
 3V3
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 6124C116
+P 8600 1250
+F 0 "RN1" H 8788 1296 50  0000 L CNN
+F 1 "10k" H 8788 1205 50  0000 L CNN
+F 2 "SDBox-mini:RESCAF80P320X160X60-8N" V 8875 1250 50  0001 C CNN
+F 3 "~" H 8600 1250 50  0001 C CNN
+	1    8600 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7900 1650 2    50   Input ~ 0
+DAT1
+Text GLabel 7900 2350 2    50   Input ~ 0
+DAT2
+Text GLabel 8400 1450 3    50   Input ~ 0
+DAT1
+Text GLabel 8600 1450 3    50   Input ~ 0
+DAT2
+Text GLabel 8500 1450 3    50   Input ~ 0
+MISO_3V3
 Wire Wire Line
-	7900 1650 8400 1650
+	8400 1050 8500 1050
+Connection ~ 8500 1050
 Wire Wire Line
-	8400 1650 8400 1950
+	8500 1050 8600 1050
+NoConn ~ 8700 1450
 Wire Wire Line
-	8400 1950 8500 1950
+	8600 1050 8700 1050
+Connection ~ 8600 1050
 Wire Wire Line
-	8400 1950 8400 2350
-Wire Wire Line
-	8400 2350 7900 2350
-Connection ~ 8400 1950
+	8250 1050 8400 1050
+Connection ~ 8400 1050
 $EndSCHEMATC
