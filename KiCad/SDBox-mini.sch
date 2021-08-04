@@ -443,11 +443,11 @@ Wire Wire Line
 Wire Wire Line
 	9550 2050 9950 2050
 $Comp
-L SDBox-mini:Micro_SD_Card J3
+L SDBox-mini:Micro_SD_Card_Socket J3
 U 1 1 610B5617
 P 7000 2050
 F 0 "J3" H 6950 1233 50  0000 C CNN
-F 1 "Micro_SD_Card" H 6950 1324 50  0000 C CNN
+F 1 "Micro_SD_Card_Socket" H 6950 1324 50  0000 C CNN
 F 2 "SDBox-mini:GCT-MEM2055-00-190-01-A" H 8150 2350 50  0001 C CNN
 F 3 "" H 7000 2050 50  0001 C CNN
 	1    7000 2050
