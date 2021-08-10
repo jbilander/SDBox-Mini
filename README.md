@@ -1,5 +1,5 @@
-# SDBox-mini for Amiga
-SDBox in a standard DB25 plastic hood cover
+# SDBox Mini for Amiga
+SDBox in a standard DB25 plastic hood cover form factor
 
 <br />
 <a href="images/SDBox-mini_pic1.png">
@@ -18,7 +18,7 @@ https://github.com/niklasekstrom/amiga-par-to-spi-adapter
 
 ***
 
-BOM Rev. 1A
+BOM Rev. 2A
 ---------
 Position  | Name/Value   | Package | Notes
 -|-|-|-|
