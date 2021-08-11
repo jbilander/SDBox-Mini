@@ -17,6 +17,19 @@ This hardware uses the firmware written by Niklas Ekström, available here: <br 
 https://github.com/niklasekstrom/amiga-par-to-spi-adapter
 
 ***
+Connecting the Arduino Nano to program the SDBox Mini
+
+    (Programmer)
+    Arduino as ISP - SDBox Mini 
+    ------------------------------------
+    D13 (SPI) SCK  - Pin 3 (ICSP) SCK
+    D12 (SPI) MISO - Pin 1 (ICSP) MISO
+    D11 (SPI) MOSI - Pin 4 (ICSP) MOSI
+    D10 (SPI) SS   - Pin 5 (ICSP) /RESET
+              5V   - Pin 2 VCC
+              GND  - Pin 6 GND
+
+***
 
 BOM Rev. 2A
 ---------
