@@ -3,13 +3,13 @@ SDBox in a standard DB25 plastic hood cover form factor
 
 <br />
 <a href="images/SDBox-mini_pic1.png">
-<img src="images/SDBox-mini_pic1.png" width="360" height="350">
+<img src="images/SDBox-mini_pic1.png" width="304" height="280">
 </a>
 <a href="images/SDBox-mini_pic2.png">
-<img src="images/SDBox-mini_pic2.png" width="360" height="350">
+<img src="images/SDBox-mini_pic2.png" width="304" height="280">
 </a>
 <a href="images/SDBox-mini_pic3.png">
-<img src="images/SDBox-mini_pic3.png" width="544" height="496">
+<img src="images/SDBox-mini_pic3.png" width="402" height="390">
 </a>
 
 ***
