@@ -16,6 +16,9 @@ SDBox in a standard DB25 plastic hood cover form factor
 This hardware uses the firmware written by Niklas Ekström, available here: <br />
 https://github.com/niklasekstrom/amiga-par-to-spi-adapter
 
+or use my fork if you also want the Activity LED to blink <br />
+https://github.com/jbilander/amiga-par-to-spi-adapter
+
 ***
 Connecting the Arduino Nano to program the SDBox Mini
 
@@ -28,6 +31,12 @@ Connecting the Arduino Nano to program the SDBox Mini
     D10 (SPI) SS   - Pin 5 (ICSP) /RESET
               5V   - Pin 2 VCC
               GND  - Pin 6 GND
+
+***
+
+### Caveats
+
+One caveat to keep in mind when building and programming Rev.2A (the first revision of the Mini) is the flashing of the fw can't be done with U4 chip in place as it drives/conflicts with MISO on ICSP (In-Circuit Serial Programming). Perhaps this can be fixed by replacing 74LVC1G17 with 74LVC1G07 and a pull-up. I don't know, but right now the fw-flashing has to be done before soldering U4 in position.
 
 ***
 
