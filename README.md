@@ -47,11 +47,50 @@ To use the Arduino Nano as ISP it has to be flashed first with the ArduinoISP-sk
 
 ***
 
-### Caveats
+Connecting a RPi4 to program the SDBox Mini
+<br />
+<br />
+<br />
+More to come here...
 
-One caveat to keep in mind when building and programming Rev.2A (the first revision of the Mini) is the flashing of the fw can't be done with U4 chip in place as it drives/conflicts with MISO on ICSP (In-Circuit Serial Programming). Perhaps this can be fixed by replacing 74LVC1G17 with 74LVC1G07 and a pull-up. I don't know, but right now the fw-flashing has to be done before soldering U4 in position.
+<br />
 
 ***
+
+### Caveats
+
+One caveat to keep in mind when building and programming Rev.2A (the first revision of the Mini) is the flashing of the fw can't be done with U4 chip in place as it drives/conflicts with MISO on ICSP (In-Circuit Serial Programming). Perhaps this can be fixed by replacing `74LVC1G17` with `74LVC1G07` and a pull-up between the IC and the AVR. I don't know, but right now the fw-flashing has to be done before soldering U4 in position.
+
+***
+
+### Building SDBox Mini
+
+Start with the 16 MHz Crystal, C1, C2 and the ATMega328P. 
+
+<a href="images/SDBox-mini_pic6.jpg">
+<img src="images/SDBox-mini_pic6.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic7.jpg">
+<img src="images/SDBox-mini_pic7.jpg" width="256" height="192">
+</a>
+
+***
+
+At this point you should be able to flash the Firmware to the ATMega using either an Arduino as ISP or a Raspberry Pi.<br /><br />
+
+Continue with the rest of the components on the front side, and then the back side. I usually pre-tin the C1 pads and use hot air to put the C1-Capacitor in place.
+***
+
+<a href="images/SDBox-mini_pic9.jpg">
+<img src="images/SDBox-mini_pic9.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic10.jpg">
+<img src="images/SDBox-mini_pic10.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic11.jpg">
+<img src="images/SDBox-mini_pic11.jpg" width="256" height="192">
+</a>
+
 
 BOM Rev. 2A
 ---------
