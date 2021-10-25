@@ -1,5 +1,5 @@
 # SDBox Mini for Amiga
-SDBox in a standard DB25 plastic hood cover form factor
+SDBox in a standard DB25 plastic shell
 
 <br />
 <a href="images/SDBox-mini_pic1.png">
@@ -20,7 +20,7 @@ or use my fork if you also want the Activity LED to blink <br />
 https://github.com/jbilander/amiga-par-to-spi-adapter
 
 ***
-Connecting the Arduino Nano to program the SDBox Mini
+Connecting the Arduino to program the SDBox Mini
 
     (Programmer)
     Arduino as ISP - SDBox Mini 
@@ -31,6 +31,15 @@ Connecting the Arduino Nano to program the SDBox Mini
     D10 (SPI) SS   - Pin 5 (ICSP) /RESET
               5V   - Pin 2 VCC
               GND  - Pin 6 GND
+
+On the Nano V3 the pins on the ICSP-header can be utilized connected like below. There is no need to solder an ICSP-header on the mini, you can just hold the connector against the footprint while programming.
+
+<a href="images/connect_nano_ICSP_to_SDBox-mini.jpg">
+<img src="images/connect_nano_ICSP_to_SDBox-mini.jpg" width="224" height="298">
+</a>
+<a href="images/SDBox-mini_pic8.jpg">
+<img src="images/SDBox-mini_pic8.jpg" width="397" height="298">
+</a>
 
 ***
 
@@ -52,7 +61,7 @@ J1 | D-Sub DB25 | DB25 Male connector with solder lugs | DB25 for Amiga parallel
 J2 | ICSP | PinHeader_2x03_P2.54mm_Vertical | Pin header _(MISO,VCC,SCK,MOSI,/RESET,GND)_ for flashing AVR via In-Circuit Serial Programming
 J3 | Micro SD Card Holder | 9-pin Micro SD card slot connector | https://www.aliexpress.com/item/32802051702.html
 J4 | Micro USB connector | USB Micro B SMT | For +5V Power only <br />https://www.aliexpress.com/item/32991869539.html
-Y1 | Ceramic SMD quartz 16.0 MHz, LC 12 pF | 3 x 5 x 1 mm | For use with XTAL1, XTAL2 on AVR https://www.reichelt.com/se/en/ceramic-smd-quartz-3-x-5-x-1-mm-16-0-mhz-16-000000-mj-p85005.html
+Y1 | Ceramic SMD quartz 16.0 MHz, LC 12 pF | 3 x 5 x 1 mm | For use with XTAL1, XTAL2 on AVR, e.g. https://www.reichelt.com/se/en/ceramic-smd-quartz-3-x-5-x-1-mm-16-0-mhz-16-000000-mj-p85005.html <br /> or <br /> https://www.mouser.se/ProductDetail/520-160-12-30B-AGMT
 D1 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | SD Activity LED indicator, Diffused Orange / Amber, 1.8V-2.3V, 20-30 mA, 605-610nm
 D2 (Optional) | LED 3mm | PinHeader_1x02_P2.54mm_Vertical, pin pitch 2.54 mm | Power LED indicator, Green Diffused T-1, 25 mcd, 565 nm, 2.2 V, 25 mA
 R1 (Optional) | 150 Ohm Resistor | 0603 SMD, 200 mW | (Mandatory if D1 populated) Series resistor for D1 LED, adjust R-value to your type of LED and preferred brightness
