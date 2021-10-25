@@ -43,6 +43,10 @@ On the Nano V3 the pins on the ICSP-header can be utilized connected like below.
 
 ***
 
+To use the Arduino Nano as ISP it has to be flashed first with the ArduinoISP-sketch which is available under File->Examples in the Arduino IDE, or you can use the attached batch-script `flash_Arduino_as_ISP.bat` and binary hex `ArduinoISP.ino.arduino_standard.hex` I have put them in a zip-file under Releases `ArduinoISP.zip`. Alter the com port in the script file to suit your machine and execute it from a command-prompt. Now you are ready to flash the SDBox-Mini via the Arduino.
+
+***
+
 ### Caveats
 
 One caveat to keep in mind when building and programming Rev.2A (the first revision of the Mini) is the flashing of the fw can't be done with U4 chip in place as it drives/conflicts with MISO on ICSP (In-Circuit Serial Programming). Perhaps this can be fixed by replacing 74LVC1G17 with 74LVC1G07 and a pull-up. I don't know, but right now the fw-flashing has to be done before soldering U4 in position.
