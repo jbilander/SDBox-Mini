@@ -1,6 +1,13 @@
 # SDBox Mini for Amiga
 SDBox in a standard DB25 plastic shell
 
+***
+<a href="images/SDBox-mini_pic4.jpg">
+<img src="images/SDBox-mini_pic4.jpg" width="304" height="228">
+</a>
+<a href="images/SDBox-mini_pic5.jpg">
+<img src="images/SDBox-mini_pic5.jpg" width="304" height="228">
+</a>
 <br />
 <a href="images/SDBox-mini_pic1.png">
 <img src="images/SDBox-mini_pic1.png" width="304" height="280">
@@ -9,14 +16,14 @@ SDBox in a standard DB25 plastic shell
 <img src="images/SDBox-mini_pic2.png" width="304" height="280">
 </a>
 <a href="images/SDBox-mini_pic3.png">
-<img src="images/SDBox-mini_pic3.png" width="402" height="390">
+<img src="images/SDBox-mini_pic3.png" width="201" height="195">
 </a>
 
 ***
-This hardware uses the firmware written by Niklas Ekström, available here: <br />
+This hardware uses the firmware written by Niklas Ekström, available here... <br />
 https://github.com/niklasekstrom/amiga-par-to-spi-adapter
 
-or use my fork if you also want the Activity LED to blink <br />
+...or use my fork if you also want the Activity LED to blink (it also includes a batch-script `flashSDBoxMini.bat` for flashing the Mini) <br />
 https://github.com/jbilander/amiga-par-to-spi-adapter
 
 ***
@@ -43,7 +50,7 @@ On the Nano V3 the pins on the ICSP-header can be utilized connected like below.
 
 ***
 
-To use the Arduino Nano as ISP it has to be flashed first with the ArduinoISP-sketch which is available under File->Examples in the Arduino IDE, or you can use the attached batch-script `flash_Arduino_as_ISP.bat` and binary hex `ArduinoISP.ino.arduino_standard.hex` I have put them in a zip-file under Releases `ArduinoISP.zip`. Alter the com port in the script file to suit your machine and execute it from a command-prompt. Now you are ready to flash the SDBox-Mini via the Arduino.
+To use the Arduino Nano as ISP it first has to be flashed with the ArduinoISP-sketch which is available under `File->Examples` in the Arduino IDE, or you can use the attached batch-script `flash_Arduino_as_ISP.bat` and binary hex `ArduinoISP.ino.arduino_standard.hex` I have put them in a zip-file under Releases `ArduinoISP.zip`. Alter the com port in the script file to suit your machine and execute it from a command-prompt. Now you are ready to flash the SDBox-Mini via the Arduino.
 
 ***
 
@@ -91,6 +98,11 @@ Continue with the rest of the components on the front side, and then the back si
 <img src="images/SDBox-mini_pic11.jpg" width="256" height="192">
 </a>
 
+<br />
+<br />
+More to come here...
+
+***
 
 BOM Rev. 2A
 ---------
