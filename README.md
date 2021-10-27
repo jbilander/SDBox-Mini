@@ -55,7 +55,7 @@ To use the Arduino Nano as ISP it first has to be flashed with the ArduinoISP-sk
 ***
 
 ### Flash the SDBox Mini using the Arduino as ISP
-This requires that you already have built the `Main.hex` file in the `avr` folder, then execute `flashSDBoxMini.bat` from a command prompt:
+This requires that you already have built the `main.hex` file in the `avr`-folder, then execute `flashSDBoxMini.bat` from a command prompt:
 <details>
 <summary>
 
