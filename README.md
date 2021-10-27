@@ -72,7 +72,7 @@ One caveat to keep in mind when building and programming Rev.2A (the first revis
 
 ### Building SDBox Mini
 
-Start with the 16 MHz Crystal, C1, C2 and the ATMega328P. 
+Start with the 16 MHz Crystal, C8, C9 and the ATMega328P. 
 
 <a href="images/SDBox-mini_pic6.jpg">
 <img src="images/SDBox-mini_pic6.jpg" width="256" height="192">
@@ -98,9 +98,59 @@ Continue with the rest of the components on the front side, and then the back si
 <img src="images/SDBox-mini_pic11.jpg" width="256" height="192">
 </a>
 
+***
+
+Verify the Micro USB-jack and the voltage levels...
+
+***
+
+<a href="images/SDBox-mini_pic12.jpg">
+<img src="images/SDBox-mini_pic12.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic13.jpg">
+<img src="images/SDBox-mini_pic13.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic14.jpg">
+<img src="images/SDBox-mini_pic14.jpg" width="256" height="192">
+</a>
+
+***
+
+Now it's time to drill the holes for the LEDs, begin with a 1mm drill and then step up to 2mm and finally 3 mm. Be very careful when drilling to get a nice clean 3mm hole, it's very easy to slip and the hole gets oval or offset.
+
+***
+
+<a href="images/SDBox-mini_pic15.jpg">
+<img src="images/SDBox-mini_pic15.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic16.jpg">
+<img src="images/SDBox-mini_pic16.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic17.jpg">
+<img src="images/SDBox-mini_pic17.jpg" width="256" height="192">
+</a>
+
+***
+
+Short video showing copying a 8 MB file from the HD to the SD-card on my A1200. +5V Power to the SDBox is nicked from the floppy drive DB23->microUSB (Howto make such a cable <a href="https://github.com/jbilander/SDBox-v2#howto-get-5v-from-the-amigas-external-floppy-port-250-ma-max-lets-make-a-cable">here</a> ).
 <br />
-<br />
-More to come here...
+https://i.imgur.com/mF9Bp4C.mp4
+
+***
+
+<a href="images/SDBox-mini_pic4.jpg">
+<img src="images/SDBox-mini_pic4.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic18.jpg">
+<img src="images/SDBox-mini_pic18.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic19.jpg">
+<img src="images/SDBox-mini_pic19.jpg" width="256" height="192">
+</a>
+
+***
+
+Happy Hackin´
 
 ***
 
