@@ -150,6 +150,21 @@ https://i.imgur.com/mF9Bp4C.mp4
 
 ***
 
+### Amiga installation:
+
+Download `Amiga.zip` from Releases.
+
+* Put latest `fat95` into `L:`  (download from Aminet)
+* Put `SD0` and `SD0.info` into `Devs:`  (from `Amiga.zip`)
+* Put `spisd.device` into `Devs:` (from `Amiga.zip`)
+* Put `Mount_SDCARD` and `Mount_SDCARD.info` anywhere on your HD or floppy disk.
+* Put a FAT/FAT32 formatted MicroSD-card in the card reader (Max 4 GB partitioned).
+* Double-click the `Mount_SDCARD` icon.
+
+Disk icon should now appear on the Workbench screen.
+
+***
+
 Happy Hackin´
 
 ***
