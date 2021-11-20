@@ -204,7 +204,18 @@ C:\Users\Jorgen\Projects\amiga-par-to-spi-adapter\avr>
 ### Connecting a RPi4 to program the SDBox Mini
 
 <br />
-
+Warning!<br />
+Connection of a GPIO to a voltage higher than 3.3V will likely destroy the GPIO block within the SoC.<br /><br />
+I used my <a href="https://github.com/jbilander/Logic-level-converter-board">Logic level converter board</a> in between the devices and powered from the RPi's +5V 
+<br />
+<br />
+<a href="images/SDBox-mini_RPi4-GPIO-Programming.jpg">
+<img src="images/SDBox-mini_RPi4-GPIO-Programming.jpg" width="256" height="192">
+</a>
+<a href="images/RPi4-GPIO-Pinout.jpg">
+<img src="images/RPi4-GPIO-Pinout.jpg" width="256" height="192">
+</a>
+<br />
 More to come here...
 
 <br />
