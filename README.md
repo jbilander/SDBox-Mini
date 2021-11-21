@@ -216,9 +216,176 @@ I used my <a href="https://github.com/jbilander/Logic-level-converter-board">Log
 <img src="images/RPi4-GPIO-Pinout.jpg" width="256" height="192">
 </a>
 <br />
-More to come here...
+First install avrdude:
 
-<br />
+    sudo apt install avrdude
+
+Now copy the default config file to a new file under /home/pi
+
+    cp /etc/avrdude.conf ~/avrdude_gpio.conf
+    
+Add this entry last in the file using your editor (vim or nano) and save the file:
+
+    #------------------------------------------------------------
+    # Linux GPIO configuration for avrdude
+    # Change the lines below to the GPIO pins connected to the AVR
+    #------------------------------------------------------------
+    programmer
+        id        = "pi_1";
+        desc      = "Use the Linux sysfs interface to bitbang GPIO lines";
+        type      = "linuxgpio";
+        reset     = 12;
+        sck       = 24;
+        mosi      = 23;
+        miso      = 18;
+    ;
+
+Now cd into /home/pi and make the script-file executable:
+
+    chmod 755 ./flashSDBoxMini.sh
+
+With all jumper-wires connected and `main.hex` built, run the script `flashSDBoxMini.sh` (OR type the line below and hit enter)
+
+    sudo avrdude -C ~/avrdude_gpio.conf -c pi_1 -v -p m328p -Uflash:w:main.hex:i -Ulfuse:w:0xe6:m -Uhfuse:w:0xdf:m -Uefuse:w:0xfc:m
+
+<details>
+<summary>
+
+    pi@raspberrypi:~ $ ./flashSDBoxMini.sh
+
+</summary>
+
+```
+avrdude: Version 6.3-20171130
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2014 Joerg Wunsch
+
+         System wide configuration file is "/home/pi/avrdude_gpio.conf"
+         User configuration file is "/root/.avrduderc"
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : unknown
+         Using Programmer              : pi_1
+         AVR Part                      : ATmega328P
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : dedicated
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65    20     4    0 no       1024    4      0  3600  3600 0xff 0xff
+           flash         65     6   128    0 yes     32768  128    256  4500  4500 0xff 0xff
+           lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+
+         Programmer Type : linuxgpio
+         Description     : Use the Linux sysfs interface to bitbang GPIO lines
+         Pin assignment  : /sys/class/gpio/gpio{n}
+           RESET   =  12
+           SCK     =  24
+           MOSI    =  23
+           MISO    =  18
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+avrdude: safemode: lfuse reads as E6
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FC
+avrdude: NOTE: "flash" memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file "main.hex"
+avrdude: writing flash (496 bytes):
+
+Writing | ################################################## | 100% 0.11s
+
+avrdude: 496 bytes of flash written
+avrdude: verifying flash memory against main.hex:
+avrdude: load data flash data from input file main.hex:
+avrdude: input file main.hex contains 496 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.10s
+
+avrdude: verifying ...
+avrdude: 496 bytes of flash verified
+avrdude: reading input file "0xe6"
+avrdude: writing lfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.00s
+
+avrdude: 1 bytes of lfuse written
+avrdude: verifying lfuse memory against 0xe6:
+avrdude: load data lfuse data from input file 0xe6:
+avrdude: input file 0xe6 contains 1 bytes
+avrdude: reading on-chip lfuse data:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: verifying ...
+avrdude: 1 bytes of lfuse verified
+avrdude: reading input file "0xdf"
+avrdude: writing hfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.00s
+
+avrdude: 1 bytes of hfuse written
+avrdude: verifying hfuse memory against 0xdf:
+avrdude: load data hfuse data from input file 0xdf:
+avrdude: input file 0xdf contains 1 bytes
+avrdude: reading on-chip hfuse data:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: verifying ...
+avrdude: 1 bytes of hfuse verified
+avrdude: reading input file "0xfc"
+avrdude: writing efuse (1 bytes):
+
+Writing | ################################################## | 100% 0.00s
+
+avrdude: 1 bytes of efuse written
+avrdude: verifying efuse memory against 0xfc:
+avrdude: load data efuse data from input file 0xfc:
+avrdude: input file 0xfc contains 1 bytes
+avrdude: reading on-chip efuse data:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: verifying ...
+avrdude: 1 bytes of efuse verified
+
+avrdude: safemode: lfuse reads as E6
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FC
+avrdude: safemode: Fuses OK (E:FC, H:DF, L:E6)
+
+avrdude done.  Thank you.
+
+pi@raspberrypi:~ $
+
+```
+</details>
 
 ***
 
