@@ -637,17 +637,6 @@ Wire Wire Line
 Connection ~ 6050 4150
 Wire Wire Line
 	6050 4150 6550 4150
-$Comp
-L SDBox-mini:74LVC1G17 U4
-U 1 1 611C568A
-P 9650 3500
-F 0 "U4" H 9650 4015 50  0000 C CNN
-F 1 "74LVC1G17" H 9650 3924 50  0000 C CNN
-F 2 "SDBox-mini:SOT-353_SC-70-5_Custom_Handsoldering" H 10150 4450 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g17-q1.pdf" H 10150 4450 50  0001 C CNN
-	1    9650 3500
-	1    0    0    -1  
-$EndComp
 Connection ~ 10300 3300
 Wire Wire Line
 	10300 3300 10100 3300
@@ -704,4 +693,46 @@ Connection ~ 8600 1050
 Wire Wire Line
 	8250 1050 8400 1050
 Connection ~ 8400 1050
+$Comp
+L SDBox-mini:74AHCT1G126 U4
+U 1 1 6297BF16
+P 9650 3500
+F 0 "U4" H 9650 4015 50  0000 C CNN
+F 1 "74AHCT1G126" H 9650 3924 50  0000 C CNN
+F 2 "SDBox-mini:SOT-353_SC-70-5_Custom_Handsoldering" H 10150 4450 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/74AHCT1G126.pdf" H 10150 4450 50  0001 C CNN
+	1    9650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 JP1
+U 1 1 62981047
+P 8650 3900
+F 0 "JP1" V 8550 3550 50  0000 L CNN
+F 1 "Conn_01x02" V 8650 3200 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 8650 3900 50  0001 C CNN
+F 3 "~" H 8650 3900 50  0001 C CNN
+	1    8650 3900
+	0    1    1    0   
+$EndComp
+Text GLabel 8550 3700 1    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R6
+U 1 1 62986CE1
+P 8650 3200
+F 0 "R6" H 8591 3154 50  0000 R CNN
+F 1 "10k" H 8591 3245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8650 3200 50  0001 C CNN
+F 3 "~" H 8650 3200 50  0001 C CNN
+	1    8650 3200
+	-1   0    0    1   
+$EndComp
+Text GLabel 8650 3100 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	9200 3300 8650 3300
+Wire Wire Line
+	8650 3700 8650 3300
+Connection ~ 8650 3300
 $EndSCHEMATC
