@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74AHCT1G126
+D Single non-inverting buffer/bus driver with  a  3-state  output.
+K Single non-inverting buffer/bus driver with  a  3-state  output.
+F https://www.diodes.com/assets/Datasheets/74AHCT1G126.pdf
+$ENDCMP
+#
 $CMP 74LVC125A
 D Quad buffer 3-State outputs
 K TTL buffer 3State
