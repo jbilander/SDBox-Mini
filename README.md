@@ -391,7 +391,7 @@ pi@raspberrypi:~ $
 
 ### Caveats
 
-One caveat to keep in mind when building and programming Rev.2A (the first revision of the Mini) is the flashing of the fw can't be done with U4 chip in place as it drives/conflicts with MISO on ICSP (In-Circuit Serial Programming). Perhaps this can be fixed by replacing `74LVC1G17` with `74LVC1G07` and a pull-up between the IC and the AVR. I don't know, but right now the fw-flashing has to be done before soldering U4 in position.
+One caveat to keep in mind when building and programming Rev.2A (the first revision of the Mini) is the flashing of the fw can't be done with U4 chip in place as it drives/conflicts with MISO on ICSP (In-Circuit Serial Programming). For Rev. 2B PCB use 74AHCT1G126 instead of 74LVC1G17, same package/footprint. This solves the flashing conflict problem. You put a Jumper-shunt on JP1 (on Rev 2B PCB) while flashing and remove it afterwards.
 
 ***
 
@@ -502,7 +502,7 @@ Position  | Name/Value   | Package | Notes
 U1 | LM1117-3.3 | SOT-223 | Low-Dropout Linear Regulator 3.3 Volt
 U2 | ATMega328P-AU | TQFP-32_7x7mm_P0.8mm | 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash
 U3 | 74LVC3G17 | TSSOP-8_3x3mm_P0.65mm | Triple non-inverting Schmitt trigger with 5V tolerant input https://www.digikey.se/product-detail/en/nexperia-usa-inc/74LVC3G17DP-125/1727-5998-1-ND/2753830
-U4 | 74LVC1G17 | 5-TSSOP, SC-70-5, SOT-353  (2.0 mm × 1.25mm) | Single non-inverting Schmitt trigger https://www.digikey.se/product-detail/en/nexperia-usa-inc/74LVC1G17GW-125/1727-4117-1-ND/1965408
+U4 | 74LVC1G17 | 5-TSSOP, SC-70-5, SOT-353  (2.0 mm × 1.25mm) | Single non-inverting Schmitt trigger https://www.digikey.se/product-detail/en/nexperia-usa-inc/74LVC1G17GW-125/1727-4117-1-ND/1965408 For Rev. 2B PCB use 74AHCT1G126 instead of 74LVC1G17, same package/footprint: https://www.mouser.com/ProductDetail/Nexperia/74AHCT1G126GW125?qs=P62ublwmbi%252BsCpFPoi5fgw%3D%3D
 J1 | D-Sub DB25 | DB25 Male connector with solder lugs | DB25 for Amiga parallel port
 J2 | ICSP | PinHeader_2x03_P2.54mm_Vertical | Pin header _(MISO,VCC,SCK,MOSI,/RESET,GND)_ for flashing AVR via In-Circuit Serial Programming
 J3 | Micro SD Card Holder | 9-pin Micro SD card slot connector | https://www.aliexpress.com/item/32802051702.html
