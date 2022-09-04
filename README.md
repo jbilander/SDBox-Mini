@@ -494,6 +494,15 @@ Disk icon should now appear on the Workbench screen.
 Happy Hackin´
 
 ***
+BOM Rev. 2B  (Same as 2A with the addition)
+---------
+Position  | Name/Value   | Package | Notes
+-|-|-|-|
+U4 | 74AHCT1G126 | 5-TSSOP, SC-70-5, SOT-353  (2.0 mm × 1.25mm) | Single non-inverting buffer 74AHCT1G126 (instead of 74LVC1G17) https://www.mouser.com/ProductDetail/Nexperia/74AHCT1G126GW125?qs=P62ublwmbi%252BsCpFPoi5fgw%3D%3D 
+JP1 | 2.0mm two-pin header + jumper-shunt | |
+R6 | 10k Ohm Resistor | 0603 SMD | Pull-up resistor for OE pin 1 of 74AHCT1G126
+
+***
 
 BOM Rev. 2A
 ---------
