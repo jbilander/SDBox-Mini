@@ -1,7 +1,25 @@
 # SDBox Mini for Amiga
 SDBox in a standard DB25 plastic shell
-
 ***
+Rev. 2B <br />
+<a href="images/SDBox-mini_pic20.jpg">
+<img src="images/SDBox-mini_pic20.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic21.jpg">
+<img src="images/SDBox-mini_pic21.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-mini_pic22.jpg">
+<img src="images/SDBox-mini_pic22.jpg" width="256" height="192">
+</a>
+<br />
+Video:<br />
+https://drive.google.com/file/d/1fLwmIyUeHZX4sln5bpJfz5QkDGD-QTOf/view?usp=sharing
+<br />
+<br />
++5V taken from floppy port with this USB-C dongle<br />
+https://github.com/jbilander/Amiga_DB23_to_USB_C_power_only_adapter
+***
+Rev. 2A <br />
 <a href="images/SDBox-mini_pic4.jpg">
 <img src="images/SDBox-mini_pic4.jpg" width="304" height="228">
 </a>
