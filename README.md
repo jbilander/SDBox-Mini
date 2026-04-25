@@ -1,5 +1,7 @@
 # SDBox Mini for Amiga
 SDBox in a standard DB25 plastic shell
+
+This version is superseded by the new SDBox-v3 here: https://github.com/jbilander/SDBox-v3
 ***
 Rev. 2B <br />
 <a href="images/SDBox-mini_pic20.jpg">
